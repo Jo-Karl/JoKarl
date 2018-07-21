@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R on </title>
+    <link>/categories/r/</link>
+    <description>Recent content in R on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Fri, 20 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Visualising data with ggplot2</title>
+      <link>/post/visualising-data-with-ggplot2/</link>
+      <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/visualising-data-with-ggplot2/</guid>
+      <description>summary(gapminder::gapminder)## country continent year lifeExp ## Afghanistan: 12 Africa :624 Min. :1952 Min. :23.60 ## Albania : 12 Americas:300 1st Qu.:1966 1st Qu.:48.20 ## Algeria : 12 Asia :396 Median :1980 Median :60.71 ## Angola : 12 Europe :360 Mean :1980 Mean :59.47 ## Argentina : 12 Oceania : 24 3rd Qu.:1993 3rd Qu.:70.85 ## Australia : 12 Max. :2007 Max. :82.60 ## (Other) :1632 ## pop gdpPercap ## Min.</description>
+    </item>
+    
+  </channel>
+</rss>

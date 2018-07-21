@@ -1,0 +1,16 @@
+---
+title: Test R markdown
+author: ''
+date: '2018-07-22'
+slug: test-r-markdown
+categories: []
+tags: []
+header:
+  caption: ''
+  image: ''
+---
+
+```{r}
+library(gapminder)
+hist(gapminder::gapminder$year)
+```

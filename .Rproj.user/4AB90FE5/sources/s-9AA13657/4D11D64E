@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1532210530660.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2886162999",
+    "id" : "4D11D64E",
+    "lastKnownWriteTime" : 1532210565,
+    "last_content_update" : 1532210565817,
+    "path" : "D:/Dropbox/Websites/JoKarl/content/post/2018-07-20-visualising-data-with-ggplot2.Rmd",
+    "project_path" : "content/post/2018-07-20-visualising-data-with-ggplot2.Rmd",
+    "properties" : {
+        "cursorPosition" : "18,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

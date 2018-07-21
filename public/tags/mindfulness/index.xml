@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mindfulness on </title>
+    <link>/tags/mindfulness/</link>
+    <description>Recent content in Mindfulness on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +1300</lastBuildDate>
+    
+	<atom:link href="/tags/mindfulness/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mindfulness and Nature</title>
+      <link>/project/mindfulness/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
+      
+      <guid>/project/mindfulness/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

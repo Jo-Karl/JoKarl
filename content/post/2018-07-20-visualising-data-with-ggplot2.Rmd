@@ -1,0 +1,19 @@
+---
+title: Visualising data with ggplot2
+author: Johannes Karl
+date: '2018-07-20'
+slug: visualising-data-with-ggplot2
+categories:
+  - R
+  - ggplot2
+tags:
+  - plot
+  - R
+header:
+  caption: ''
+  image: ''
+---
+
+```{r}
+summary(gapminder::gapminder)
+```

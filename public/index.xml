@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>/</link>
+    <description>Recent content on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Wed, 20 Apr 2016 00:00:00 +1200</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Visualising data with ggplot2</title>
+      <link>/post/visualising-data-with-ggplot2/</link>
+      <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/visualising-data-with-ggplot2/</guid>
+      <description>&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(gapminder::gapminder)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##         country        continent        year         lifeExp     
+##  Afghanistan:  12   Africa  :624   Min.   :1952   Min.   :23.60  
+##  Albania    :  12   Americas:300   1st Qu.:1966   1st Qu.:48.20  
+##  Algeria    :  12   Asia    :396   Median :1980   Median :60.71  
+##  Angola     :  12   Europe  :360   Mean   :1980   Mean   :59.47  
+##  Argentina  :  12   Oceania : 24   3rd Qu.:1993   3rd Qu.:70.85  
+##  Australia  :  12                  Max.   :2007   Max.   :82.60  
+##  (Other)    :1632                                                
+##       pop              gdpPercap       
+##  Min.   :6.001e+04   Min.   :   241.2  
+##  1st Qu.:2.794e+06   1st Qu.:  1202.1  
+##  Median :7.024e+06   Median :  3531.8  
+##  Mean   :2.960e+07   Mean   :  7215.3  
+##  3rd Qu.:1.959e+07   3rd Qu.:  9325.5  
+##  Max.   :1.319e+09   Max.   :113523.1  
+## &lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +1200</pubDate>
+      
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Landscape and Well-Being: Using Psychology to Inform Urban Planning</title>
+      <link>/talk/blue_welbeing/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
+      
+      <guid>/talk/blue_welbeing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Methods in R</title>
+      <link>/project/methods/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
+      
+      <guid>/project/methods/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mindfulness and Nature</title>
+      <link>/project/mindfulness/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
+      
+      <guid>/project/mindfulness/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rituals, repetitiveness and cognitive load: a competitive test of ritual benefits for stress</title>
+      <link>/publication/ritualsandanxiety/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
+      
+      <guid>/publication/ritualsandanxiety/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
