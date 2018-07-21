@@ -305,7 +305,12 @@
   </h3>
   <div class="article-style" itemprop="articleBody">
     
-    summary(gapminder::gapminder)## country continent year lifeExp ## Afghanistan: 12 Africa :624 Min. :1952 Min. :23.60 ## Albania : 12 Americas:300 1st Qu.:1966 1st Qu.:48.20 ## Algeria : 12 Asia :396 Median :1980 Median :60.71 ## Angola : 12 Europe :360 Mean :1980 Mean :59.47 ## Argentina : 12 Oceania : 24 3rd Qu.:1993 3rd Qu.:70.85 ## Australia : 12 Max. :2007 Max. :82.60 ## (Other) :1632 ## pop gdpPercap ## Min.
+    <pre class="r"><code>library(ggplot2)
+ggplot(gapminder::gapminder) +
+  aes(x = gdpPercap, y = lifeExp) +
+  geom_point()</code></pre>
+<p><img src="/post/2018-07-20-visualising-data-with-ggplot2_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+
     
   </div>
   <p class="read-more" itemprop="mainEntityOfPage">

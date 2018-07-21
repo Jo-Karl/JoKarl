@@ -15,5 +15,8 @@ header:
 ---
 
 ```{r}
-summary(gapminder::gapminder)
+library(ggplot2)
+ggplot(gapminder::gapminder) +
+  aes(x = gdpPercap, y = lifeExp) +
+  geom_point()
 ```
