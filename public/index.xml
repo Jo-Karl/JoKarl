@@ -16,11 +16,17 @@
       <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/visualising-data-with-ggplot2/</guid>
-      <description>&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2)
-ggplot(gapminder::gapminder) +
-  aes(x = gdpPercap, y = lifeExp) +
-  geom_point()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/2018-07-20-visualising-data-with-ggplot2_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+      <description>&lt;div id=&#34;plotting-regression-lines&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Plotting regression lines&lt;/h1&gt;
+&lt;p&gt;This is just a short&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2)
+library(ggExtra)
+p &amp;lt;- ggplot(gapminder::gapminder) +
+     aes(x = gdpPercap, y = lifeExp, colour = continent, group = 1) +
+     geom_smooth(method = &amp;quot;lm&amp;quot;) +
+     geom_point(alpha = .50) +
+     scale_x_log10()&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -32,6 +38,24 @@ ggplot(gapminder::gapminder) +
       <guid>/privacy/</guid>
       <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>The effect of blue and green spaces on physiology and affect</title>
+      <link>/publication/the-effect-of-blue-and-green-spaces-on-physiology-and-affect/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/the-effect-of-blue-and-green-spaces-on-physiology-and-affect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rituals, repetitiveness and cognitive load: a competitive test of ritual benefits for stress</title>
+      <link>/publication/ritualsandanxiety/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +1300</pubDate>
+      
+      <guid>/publication/ritualsandanxiety/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -58,15 +82,6 @@ ggplot(gapminder::gapminder) +
       <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
       
       <guid>/project/mindfulness/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rituals, repetitiveness and cognitive load: a competitive test of ritual benefits for stress</title>
-      <link>/publication/ritualsandanxiety/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
-      
-      <guid>/publication/ritualsandanxiety/</guid>
       <description></description>
     </item>
     

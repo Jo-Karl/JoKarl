@@ -17,7 +17,8 @@
       
     
   
-  <meta name="description" content="library(ggplot2)ggplot(gapminder::gapminder) &#43;aes(x = gdpPercap, y = lifeExp) &#43;geom_point()">
+  <meta name="description" content="Plotting regression linesThis is just a short
+library(ggplot2)library(ggExtra)p &lt;- ggplot(gapminder::gapminder) &#43;aes(x = gdpPercap, y = lifeExp, colour = continent, group = 1) &#43;geom_smooth(method = &quot;lm&quot;) &#43;geom_point(alpha = .50) &#43;scale_x_log10()">
 
   
   <link rel="alternate" hreflang="en-us" href="/post/visualising-data-with-ggplot2/">
@@ -81,7 +82,8 @@
   <meta property="og:site_name" content="">
   <meta property="og:url" content="/post/visualising-data-with-ggplot2/">
   <meta property="og:title" content="Visualising data with ggplot2 | ">
-  <meta property="og:description" content="library(ggplot2)ggplot(gapminder::gapminder) &#43;aes(x = gdpPercap, y = lifeExp) &#43;geom_point()">
+  <meta property="og:description" content="Plotting regression linesThis is just a short
+library(ggplot2)library(ggExtra)p &lt;- ggplot(gapminder::gapminder) &#43;aes(x = gdpPercap, y = lifeExp, colour = continent, group = 1) &#43;geom_smooth(method = &quot;lm&quot;) &#43;geom_point(alpha = .50) &#43;scale_x_log10()">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2018-07-20T00:00:00&#43;00:00">
@@ -346,11 +348,17 @@
 
 
     <div class="article-style" itemprop="articleBody">
-      <pre class="r"><code>library(ggplot2)
-ggplot(gapminder::gapminder) +
-  aes(x = gdpPercap, y = lifeExp) +
-  geom_point()</code></pre>
-<p><img src="/post/2018-07-20-visualising-data-with-ggplot2_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+      <div id="plotting-regression-lines" class="section level1">
+<h1>Plotting regression lines</h1>
+<p>This is just a short</p>
+<pre class="r"><code>library(ggplot2)
+library(ggExtra)
+p &lt;- ggplot(gapminder::gapminder) +
+     aes(x = gdpPercap, y = lifeExp, colour = continent, group = 1) +
+     geom_smooth(method = &quot;lm&quot;) +
+     geom_point(alpha = .50) +
+     scale_x_log10()</code></pre>
+</div>
 
     </div>
 

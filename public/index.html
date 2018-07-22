@@ -423,7 +423,43 @@
   <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
   <span itemprop="author">
     J. A. Karl, R. Fischer</span>
-  (2017).
+  (2018).
+  <a href="/publication/the-effect-of-blue-and-green-spaces-on-physiology-and-affect/" itemprop="name">The effect of blue and green spaces on physiology and affect</a>.
+  <em>In Review</em>.
+  
+  <p>
+
+
+
+
+
+
+
+
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://osf.io/3d7ap/" target="_blank" rel="noopener">
+  Dataset
+</a>
+
+
+
+
+
+
+
+
+
+</p>
+</div>
+
+      
+    
+      
+        <div class="pub-list-item" style="margin-bottom: 1rem" itemscope itemtype="http://schema.org/CreativeWork">
+  <i class="fa fa-file-text-o pub-icon" aria-hidden="true"></i>
+  <span itemprop="author">
+    J. A. Karl, R. Fischer</span>
+  (2018).
   <a href="/publication/ritualsandanxiety/" itemprop="name">Rituals, repetitiveness and cognitive load: a competitive test of ritual benefits for stress</a>.
   In <em>Human Nature</em>.
   
@@ -436,6 +472,10 @@
 
 
 
+
+<a class="btn btn-primary btn-outline btn-xs" href="https://osf.io/rsu9x/" target="_blank" rel="noopener">
+  Dataset
+</a>
 
 
 
@@ -620,11 +660,17 @@
   </h3>
   <div class="article-style" itemprop="articleBody">
     
-    <pre class="r"><code>library(ggplot2)
-ggplot(gapminder::gapminder) +
-  aes(x = gdpPercap, y = lifeExp) +
-  geom_point()</code></pre>
-<p><img src="/post/2018-07-20-visualising-data-with-ggplot2_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+    <div id="plotting-regression-lines" class="section level1">
+<h1>Plotting regression lines</h1>
+<p>This is just a short</p>
+<pre class="r"><code>library(ggplot2)
+library(ggExtra)
+p &lt;- ggplot(gapminder::gapminder) +
+     aes(x = gdpPercap, y = lifeExp, colour = continent, group = 1) +
+     geom_smooth(method = &quot;lm&quot;) +
+     geom_point(alpha = .50) +
+     scale_x_log10()</code></pre>
+</div>
 
     
   </div>
@@ -778,7 +824,12 @@ ggplot(gapminder::gapminder) +
           
           
           
-          <a href="/tags/anxiety/" style="font-size:0.8rem">Anxiety</a>
+          <a href="/tags/anxiety/" style="font-size:1.8725805810714777rem">Anxiety</a>
+        
+          
+          
+          
+          <a href="/tags/blue-vs.-green/" style="font-size:0.8rem">Blue vs. Green</a>
         
           
           
@@ -798,7 +849,7 @@ ggplot(gapminder::gapminder) +
           
           
           
-          <a href="/tags/nature/" style="font-size:0.8rem">Nature</a>
+          <a href="/tags/nature/" style="font-size:1.8725805810714777rem">Nature</a>
         
           
           
@@ -813,7 +864,7 @@ ggplot(gapminder::gapminder) +
           
           
           
-          <a href="/tags/stress/" style="font-size:0.8rem">Stress</a>
+          <a href="/tags/stress/" style="font-size:1.8725805810714777rem">Stress</a>
         
           
           

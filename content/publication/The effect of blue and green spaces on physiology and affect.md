@@ -1,6 +1,6 @@
 +++
-title = "Rituals, repetitiveness and cognitive load: a competitive test of ritual benefits for stress"
-date = 2018-01-01T00:00:00
+title = "The effect of blue and green spaces on physiology and affect"
+date = "2018-01-01T00:00:00"
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
@@ -15,13 +15,13 @@ authors = ["J. A. Karl", "R. Fischer"]
 # 4 = Report
 # 5 = Book
 # 6 = Book section
-publication_types = ["2"]
+publication_types = ["3"]
 
 # Publication name and optional abbreviated version.
-publication = "In *Human Nature*"
+publication = "*In Review*"
 
 # Abstract and optional shortened version.
-abstract = "A central hypothesis to account for the ubiquity of rituals across cultures is their supposed anxiolytic effects: rituals being maintained because they reduce existential anxiety and uncertainty. We aimed to test the anxiolytic effects of rituals by investigating two possible underlying mechanisms for it: cognitive load and repetitive movement. In our pre-registered experiment (osf.io/rsu9x), 180 undergraduates took part in either a stress or a control condition and were subsequently assigned to either control, cognitive load, undirected movement, a combination of undirected movement and cognitive load, or a ritualistic intervention. Using both repeated self-report measures and continuous physiological indicators of anxiety, we failed to find direct support for a cognitive suppression effect of anxiety trough ritualistic behavior. Nevertheless, we found that induced stress increased participants’ subsequent repetitive behavior, which in turn reduced physiological arousal. This study provides novel evidence for plausible underlying effects of the proposed anxiolytic effect of rituals: repetitive behavior but not cognitive load may decrease physiological stress responses during ritual."
+abstract = "Previous studies on green spaces (characterized by the presence of leafy vegetation) versus blue spaces (characterized by the presence of aquatic features) found that participants exhibit preferences for blue spaces. One of the crucial questions is whether these preferences are matched by physiological responses. We replicated previous findings (White et al., 2010) showing that participants exhibit a preference for aquatic compared to non-aquatic spaces. More importantly, we found that participants exposed to aquatic places showed a greater reduction in self-reported stress compared to the non-aquatic condition, but physiological measures did not show differential effects across conditions. Examining the interaction between physiology and self-reports on well-being, we found that psychological reactions (e.g., changes in valence and attractiveness due to exposure to nature related pictures) increased both self-reported and physiological well-being. In summary, our study provides further evidence for the importance of aquatic features for psychological well-being and also highlights the importance of psychological evaluation of places that can lead to positive well-being."
 
 # Featured image thumbnail (optional)
 image_preview = ""
@@ -38,13 +38,13 @@ projects = []
 
 # Tags (optional).
 #   Set `tags = []` for no tags, or use the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
-tags = ["Ritual", "Stress", "Anxiety"]
+tags = ["Nature", "Stress", "Anxiety", "Blue vs. Green"]
 
 # Links (optional).
 url_pdf = ""
 url_preprint = ""
 url_code = ""
-url_dataset = "https://osf.io/rsu9x/"
+url_dataset = "https://osf.io/3d7ap/"
 url_project = ""
 url_slides = ""
 url_video = ""

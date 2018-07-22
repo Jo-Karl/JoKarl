@@ -5,15 +5,15 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3693869065",
+    "hash" : "0",
     "id" : "4D11D64E",
-    "lastKnownWriteTime" : 1532211042,
-    "last_content_update" : 1532211042767,
+    "lastKnownWriteTime" : 1532249437,
+    "last_content_update" : 1532249438011,
     "path" : "D:/Dropbox/Websites/JoKarl/content/post/2018-07-20-visualising-data-with-ggplot2.Rmd",
     "project_path" : "content/post/2018-07-20-visualising-data-with-ggplot2.Rmd",
     "properties" : {
-        "cursorPosition" : "21,0",
-        "scrollLine" : "1"
+        "cursorPosition" : "26,1",
+        "scrollLine" : "7"
     },
     "relative_order" : 3,
     "source_on_save" : false,

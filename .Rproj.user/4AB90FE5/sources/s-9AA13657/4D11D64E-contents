@@ -13,10 +13,16 @@ header:
   caption: ''
   image: ''
 ---
+#Plotting regression lines
 
+This is just a short 
 ```{r}
 library(ggplot2)
-ggplot(gapminder::gapminder) +
-  aes(x = gdpPercap, y = lifeExp) +
-  geom_point()
+library(ggExtra)
+p <- ggplot(gapminder::gapminder) +
+     aes(x = gdpPercap, y = lifeExp, colour = continent, group = 1) +
+     geom_smooth(method = "lm") +
+     geom_point(alpha = .50) +
+     scale_x_log10()
+p
 ```

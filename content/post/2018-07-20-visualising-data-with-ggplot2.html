@@ -16,8 +16,14 @@ header:
 
 
 
+<div id="plotting-regression-lines" class="section level1">
+<h1>Plotting regression lines</h1>
+<p>This is just a short</p>
 <pre class="r"><code>library(ggplot2)
-ggplot(gapminder::gapminder) +
-  aes(x = gdpPercap, y = lifeExp) +
-  geom_point()</code></pre>
-<p><img src="/post/2018-07-20-visualising-data-with-ggplot2_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+library(ggExtra)
+p &lt;- ggplot(gapminder::gapminder) +
+     aes(x = gdpPercap, y = lifeExp, colour = continent, group = 1) +
+     geom_smooth(method = &quot;lm&quot;) +
+     geom_point(alpha = .50) +
+     scale_x_log10()</code></pre>
+</div>
