@@ -13,13 +13,13 @@
     
     
     <item>
-      <title>Visualising data with ggplot2</title>
-      <link>/post/visualising-data-with-ggplot2/</link>
+      <title>Multi-dimensional scaling in R</title>
+      <link>/post/smacof/</link>
       <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/visualising-data-with-ggplot2/</guid>
-      <description>Plotting regression linesThis is just a short
-library(ggplot2)library(ggExtra)p &amp;lt;- ggplot(gapminder::gapminder) +aes(x = gdpPercap, y = lifeExp, colour = continent, group = 1) +geom_smooth(method = &amp;quot;lm&amp;quot;) +geom_point(alpha = .50) +scale_x_log10()</description>
+      <guid>/post/smacof/</guid>
+      <description>MDS basicsThis post focuses on MDS (Also sometimes called smallest space analysis (Guttman, 1968) or multidimensional similarity structure analysis (Borg &amp;amp; Lingoes, 1987)) as exploratory tool and a large amount of the information is lifted from Borg and Gronen (2005) which I really recommend for further readings.
+Exploratory MDS might seem at first glance like tea-leaf reading, but over the years several rules have been developed that aid in determining structure from the MDS plots.</description>
     </item>
     
     <item>

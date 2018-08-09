@@ -269,7 +269,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    1 min read
+    10 min read
   </span>
   
 
@@ -286,7 +286,7 @@
     <a href="/categories/r/">R</a
     >, 
     
-    <a href="/categories/ggplot2/">ggplot2</a
+    <a href="/categories/mds/">MDS</a
     >
     
   </span>
@@ -301,26 +301,16 @@
   
   
   <h3 class="article-title" itemprop="headline">
-    <a href="/post/visualising-data-with-ggplot2/" itemprop="url">Visualising data with ggplot2</a>
+    <a href="/post/smacof/" itemprop="url">Multi-dimensional scaling in R</a>
   </h3>
   <div class="article-style" itemprop="articleBody">
     
-    <div id="plotting-regression-lines" class="section level1">
-<h1>Plotting regression lines</h1>
-<p>This is just a short</p>
-<pre class="r"><code>library(ggplot2)
-library(ggExtra)
-p &lt;- ggplot(gapminder::gapminder) +
-     aes(x = gdpPercap, y = lifeExp, colour = continent, group = 1) +
-     geom_smooth(method = &quot;lm&quot;) +
-     geom_point(alpha = .50) +
-     scale_x_log10()</code></pre>
-</div>
-
+    MDS basicsThis post focuses on MDS (Also sometimes called smallest space analysis (Guttman, 1968) or multidimensional similarity structure analysis (Borg &amp; Lingoes, 1987)) as exploratory tool and a large amount of the information is lifted from Borg and Gronen (2005) which I really recommend for further readings.
+Exploratory MDS might seem at first glance like tea-leaf reading, but over the years several rules have been developed that aid in determining structure from the MDS plots.
     
   </div>
   <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/visualising-data-with-ggplot2/" class="btn btn-primary btn-outline">
+    <a href="/post/smacof/" class="btn btn-primary btn-outline">
       CONTINUE READING
     </a>
   </p>
@@ -407,6 +397,18 @@ p &lt;- ggplot(gapminder::gapminder) +
     
     
 
+    
+    
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        CommonHTML: { linebreaks: { automatic: true } },
+        tex2jax: { inlineMath: [ ['$', '$'], ['\\(','\\)'] ], displayMath: [ ['$$','$$'], ['\\[', '\\]'] ], processEscapes: false },
+        TeX: { noUndefined: { attributes: { mathcolor: 'red', mathbackground: '#FFEEEE', mathsize: '90%' } } },
+        messageStyle: 'none'
+      });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous"></script>
     
     
 

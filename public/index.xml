@@ -11,21 +11,86 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Visualising data with ggplot2</title>
-      <link>/post/visualising-data-with-ggplot2/</link>
+      <title>Multi-dimensional scaling in R</title>
+      <link>/post/smacof/</link>
       <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/visualising-data-with-ggplot2/</guid>
-      <description>&lt;div id=&#34;plotting-regression-lines&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Plotting regression lines&lt;/h1&gt;
-&lt;p&gt;This is just a short&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2)
-library(ggExtra)
-p &amp;lt;- ggplot(gapminder::gapminder) +
-     aes(x = gdpPercap, y = lifeExp, colour = continent, group = 1) +
-     geom_smooth(method = &amp;quot;lm&amp;quot;) +
-     geom_point(alpha = .50) +
-     scale_x_log10()&lt;/code&gt;&lt;/pre&gt;
+      <guid>/post/smacof/</guid>
+      <description>&lt;div id=&#34;mds-basics&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;MDS basics&lt;/h1&gt;
+&lt;p&gt;This post focuses on MDS (Also sometimes called smallest space analysis (Guttman, 1968) or multidimensional similarity structure analysis (Borg &amp;amp; Lingoes, 1987)) as exploratory tool and a large amount of the information is lifted from Borg and Gronen (2005) which I really recommend for further readings.&lt;/p&gt;
+&lt;p&gt;Exploratory MDS might seem at first glance like tea-leaf reading, but over the years several rules have been developed that aid in determining structure from the MDS plots.&lt;/p&gt;
+&lt;p&gt;In the case I will talk about during this post we were interested in discovering how different measures of mindfulness, personality, and approach/ avoidance motivation are related to each other. To this extent participants answered statements about themselves on Likert-scales related to these concepts. An important concept in MDS is distance. The idea behind distance is that individuals reproduce mental distances between concepts when asked about dissimilarities between the concepts. To cite directly form Borg and Gronen (2005):&lt;/p&gt;
+&lt;p&gt;“The most common approach is to hypothesize that a person, when asked about the dissimilarity of pairs of objects from a set of objects, acts as if he or she computes a distance in his or her “psychological space” of these objects.”&lt;/p&gt;
+&lt;p&gt;In our case participants were not asked to rate dissimilarities between the measures, but rather rate themselves on these measures. Nevertheless, if we think about it these self-ratings can also represent psychological distances. A participant that scores high on avoidance behaviour might also score high on anxiety, but score low on approach behaviour. These differences can be represented as psychological distances with avoidance behaviour and anxiety being in close proximity and approach behaviour being distal from those two concepts. ## Comparing MDS and PCA &lt;strong&gt;REWRITE&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Mathematically and conceptually, there are close correspondences between MDS and other methods used to reduce the dimensionality of complex data, such as Principal components analysis (PCA) and factor analysis.&lt;/p&gt;
+&lt;p&gt;PCA is more focused on the dimensions themselves, and seek to maximize explained variance, whereas MDS is more focused on relations among the scaled objects.&lt;/p&gt;
+&lt;p&gt;MDS projects n-dimensional data points to a (commonly) 2-dimensional space such that similar objects in the n-dimensional space will be close together on the two dimensional plot, while PCA projects a multidimensional space to the directions of maximum variability using covariance/correlation matrix to analyze the correlation between data points and variables.&lt;/p&gt;
+&lt;div id=&#34;correlations-and-mds&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Correlations and MDS&lt;/h2&gt;
+&lt;p&gt;Data obtained from answers to Likert scales can not directly be considered as distances, but the correlation coefficients between multiple columns can. Correlations are appropriate for MDS.&lt;/p&gt;
+&lt;div id=&#34;obtaining-a-distance-matrix-from-a-correlation-matrix.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Obtaining a distance matrix from a correlation matrix.&lt;/h3&gt;
+&lt;p&gt;The &lt;em&gt;psych&lt;/em&gt; package provides a handy function (&lt;em&gt;cor2dist&lt;/em&gt;) to transform a correlation matrix into a distance matrix. In the background this simple function is performed: &lt;span class=&#34;math display&#34;&gt;\[\sqrt{2 * (1 - x)}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Pipelines provide a handy way of reducing the number of objects stored in the work space if they are not used in later analysis. In my current case I used the different measures of interested (Mindfulness facets, personality, etc.) and labeled the facets. The first line produces the correlation between the variables, the second line selects only the correlation coefficients from the output, and the second line converts them into a distance matrix which is returned as an object labelled distance.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;distance &amp;lt;- psych::corr.test(mnd_test[,facets]) %&amp;gt;%
+  .$r %&amp;gt;%
+  psych::cor2dist()&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So why even bother with transforming correlation coefficients into distances? The reason for this can be found in the assumptions about a geometrical plane. The first assumption is called non-negativity and can be expressed as: &lt;span class=&#34;math display&#34;&gt;\[d_{ii} = d_{jj} = 0 ≤ d_{ij}\]&lt;/span&gt; Simply put on plane the the distance between any two points &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; is greater than 0 or equal to 0 (if &lt;span class=&#34;math inline&#34;&gt;\(i = j\)&lt;/span&gt;). This presents the first reason why correlation coefficients can not directly used as input for a MDS, because they can be negative. The second assumption called symmetry is self-explanatory: &lt;span class=&#34;math display&#34;&gt;\[d_{ij} = d_{ji}\]&lt;/span&gt; For an MDS it is necessary that the distance between &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; is identical to the distance between &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Last is the triangle inequality: &lt;span class=&#34;math display&#34;&gt;\[d_{ij} ≤ d_{ik} + d_{kj}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This triangle inequality says that going directly from &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; to &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; will never be farther than going from &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; to &lt;span class=&#34;math inline&#34;&gt;\(j\)&lt;/span&gt; via an intermediate point &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;. If &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt; happens to be on the way, then the function is an equality.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;evaluating-stress&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Evaluating stress&lt;/h2&gt;
+&lt;p&gt;Rather then goodness-of-fit indicators MDS uses a badness-of-fit indicator, &lt;em&gt;stress&lt;/em&gt;. Stress is the normed sum of squares aggregating the representation errors of the model compared to the underlying data. In an applied context we rarely examine the raw stress scores as it is dependent on the scale used. Rather we use a value to judge badness-of-fit that is called Stress-1 or &lt;span class=&#34;math inline&#34;&gt;\(\sigma_1\)&lt;/span&gt; 1 (Kruskal, 1964a). If you are interested, below is the formula for &lt;span class=&#34;math inline&#34;&gt;\(\sigma_1\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\sigma_1(X) = \sqrt{\frac{\sum{[f(p_{ij}) - d_{ij}(X)]^2}}{\sum{d_{ij}^{2}(X)}}}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;One important property of &lt;span class=&#34;math inline&#34;&gt;\(\sigma_1\)&lt;/span&gt; is that missing data is skipped in the process of summing up the representation errors. The more missing data is present the lower the stress value will be. This is probably less a problem if you are working with correlations derived from underlying data, but can be a problem if you are working with values obtained from other sources.&lt;/p&gt;
+&lt;p&gt;From the presented formula we can derive that if we perfectly represent the underlying data &lt;span class=&#34;math inline&#34;&gt;\(\sigma_1\)&lt;/span&gt; will be 0 and the greater the deviation gets the greater &lt;span class=&#34;math inline&#34;&gt;\(\sigma_1\)&lt;/span&gt; becomes. &lt;strong&gt;There is some parts here that could be further elaborated on&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;determening-the-correct-number-of-dimensions&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Determening the correct number of dimensions&lt;/h2&gt;
+&lt;p&gt;All data can be represented in a MDS with 0 stress in &lt;span class=&#34;math inline&#34;&gt;\(m = n -2\)&lt;/span&gt; dimensions, where &lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt; is the number of dimensions and &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; is the number of variables included in the MDS. Borg and Gronen again express this dilemma in a very succinct way :&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“However, such perfect solutions are not desired, as we saw above. Therefore, one seeks an MDS representation with considerably fewer dimensions. The problem is how to choose the “proper” dimensionality. Scaling with too few dimensions may distort the true (reliable) MDS structure due to over-compression or may lead to technical problems. Being too generous on dimensions may, on the other hand, blur the MDS structure due to overfitting noise components.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;As everything in MDS the decision on the number of dimensions is largely up to the researcher and while universal rules of thumb are hard to give several methods have been developed to assists applied researchers to determine the correct number of dimensions.&lt;/p&gt;
+&lt;p&gt;One method should be familiar to anyone that uses factor analysis on the regular, the scree plot (Or parallel analysis). The goal is to fin a solution “for which further increase in [m] does not significantly reduce Stress” (Kruskal, 1964a, p. 16). The simplest way to do this is computing the &lt;span class=&#34;math inline&#34;&gt;\(\sigma_1\)&lt;/span&gt; for each m-dimensional solution and plotting it against the number of dimensions. This can easily be done in R using many different approaches, below is a very lazy implementation with a for loop.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;## The for loop runs the MDS function for the amount of variables in the set - 1. 
+for(ii in 1:(length(facets) - 1)){
+            distance_MDS &amp;lt;- smacof::mds(distance, ndim = ii,
+                                        type =   &amp;quot;ordinal&amp;quot;)
+            stress_values[ii] &amp;lt;- distance_MDS$stress
+}
+## Here I jsut add a second column that contains the number of dimension coresponding to the stress value.
+stress_plot &amp;lt;- cbind(stress_values, seq(1:(length(facets) - 1)))
+
+## Last, I plot the number of dimensions on the x-axis and the stress-1 value on the y axis.
+plot(stress_plot[,2], stress_plot[,1])&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-07-20-visualising-data-with-ggplot2_files/figure-html/scree-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;This plot can be inspected to determine the appropriate number of dimensions. As you can see stress is monotonically decreasing with increasing dimensionality. At the start a step decline occurs and after a certain point stress decreases only marginally with increasing dimensionality. A commonly applied interpretation is to look for the &lt;em&gt;elbow&lt;/em&gt; of the scree plot, where decreases in stress become less pronounced. The rationale of this choice is that the elbow marks the point where MDS uses additional dimensions to essentially only scale the noise in the data, after having succeeded in representing the systematic structure in the given dimensionality m.&lt;/p&gt;
+&lt;p&gt;I mentioned parallel analysis above. Some simulation studies on stress obtained from random data based on different &lt;em&gt;n&lt;/em&gt; and &lt;em&gt;m&lt;/em&gt; were conducted in the past (Cliff, 1973; Knoll, 1969; Klahr, 1969; Spence and Ogilvie, 1973). It might be promising to implent an approach that mirrors parallel analysis for stress values.&lt;/p&gt;
+&lt;p&gt;In our current example this point could be point 4. A further problem that needs to be considered in MDS that if one intends to plot the resulting graph dimensions above 3 are hard to display and visually interpret. This makes trade offs between the goal of MDS, uncovering and visualising data structures, and statistical rigor necessary. I would use 3 dimensions, as they can still be visualised and their &lt;span class=&#34;math inline&#34;&gt;\(\sigma_1\)&lt;/span&gt; = 0.11 is low enough to assume acceptable representation of the underlying data.&lt;/p&gt;
+&lt;p&gt;So what is a acceptable stress value? Often quoted or rather misquoted at this point is Guttman (in Porrat, 1974). If you have a look online and even in some publications authors report that &lt;span class=&#34;math inline&#34;&gt;\(\sigma_1 &amp;lt;= .15\)&lt;/span&gt; represents a good value for an acceptably precise ordinal MDS solution. Citing again from Borg and Gronen:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“[H]e required that the coefficient of alienation K [which is similar but not identical to Stress] should be less than 0.15 for an acceptably precise MDS solution. He later added that what he had in mind when he made this proposal were “the usual circumstances”(Guttman, personal communication).”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The usual circumstances are where the number of items clearly exceeds the number of dimensions (sometimes suggested as &lt;span class=&#34;math inline&#34;&gt;\(n &amp;gt; m * 4\)&lt;/span&gt;). Further if &lt;span class=&#34;math inline&#34;&gt;\(n &amp;gt; m * 10\)&lt;/span&gt; larger values than .15 are acceptable. I did a small literature search, but could not find any studies that directly compared the coefficient of alienation K to &lt;span class=&#34;math inline&#34;&gt;\(\sigma_1\)&lt;/span&gt;. In my view it is unclear how well the .15 rule translates between those measures.&lt;/p&gt;
+&lt;p&gt;Other authors developed recommendations based on experience for &lt;span class=&#34;math inline&#34;&gt;\(\sigma_1\)&lt;/span&gt;. The following part from Borg and Gronen highlight an exceptionally important point about those cut-offs:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“For the Stress-1 coefficient σ1 using ordinal MDS, Kruskal (1964a), on the basis of his “experience with experimental and synthetic data” (p. 16), suggests the following benchmarks: .20 = poor, .10 = fair, .05 = good, .025 = excellent, and .00 = perfect. Unfortunately, such criteria almost inevitably lead to misuse by suggesting that only solutions whose Stress is less than .20 are acceptable, or that all solutions with a Stress of less than .05 are good in more than just a formal sense. Neither conclusion is correct. An MDS solution may have high Stress simply as a consequence of high error in the data, and finding a precise representation for the data does not imply anything about its scientific value.”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div id=&#34;the-math&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;The math&lt;/h3&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\sqrt{\sum_{r=1}^{R} (x_ij - x_jr)^2}\]&lt;/span&gt; ## Metric and Non-metric MDS&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Include why ratio or ordinal&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;interpretation-of-a-mds-plot&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Interpretation of a MDS plot&lt;/h2&gt;
+&lt;p&gt;In their introduction to Multidimensional Scaling Kruskal and Wish recommend that a MDS plot should be interpreted by applying the following rule (generalised from their example of Morse code): &amp;quot; Pick some point which is peripheral, that is, which lies at the outermost edge of the configuration. Ask yourself what is common to this point and its nearest neighbors, and how they differ from the points at the opposite edge of the configuration. Then repeat this process, using other peripheral points.&amp;quot;&lt;/p&gt;
+&lt;p&gt;In a two dimensional plot it can be beneficial to first examine the x and y axis. This can yield important insight into the structure of the points.&lt;/p&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 </description>
     </item>
