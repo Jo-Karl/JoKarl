@@ -17,9 +17,9 @@ weight = 5
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Psychology"
+  course = "PhD Student in Psychology"
   institution = "Victoria University of Wellington"
-  year = 2018
+  year = 2018 - "Current"
 
 [[education.courses]]
   course = "MSc in Cross-Cultural Psychology"
