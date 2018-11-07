@@ -44,13 +44,13 @@ tags = ["Ritual", "Stress", "Anxiety"]
 url_pdf = ""
 url_preprint = ""
 url_code = ""
-url_dataset = "https://osf.io/rsu9x/"
+url_dataset = "//osf.io/rsu9x/"
 url_project = ""
 url_slides = ""
 url_video = ""
 url_poster = ""
 url_source = ""
-url_preregistration = ""
+url_preregistration = "//osf.io/rsu9x/"
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.

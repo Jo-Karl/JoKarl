@@ -234,17 +234,17 @@ enableGitInfo = false
   [[params.social]]
     icon = "twitter-square"
     icon_pack = "fa"
-    link = "//twitter.com/J_A_Karl"
+    link = "twitter.com/J_A_Karl"
 
   [[params.social]]
     icon = "github"
     icon_pack = "fa"
-    link = "//github.com/Jo-Karl"
+    link = "github.com/Jo-Karl"
     
   [[params.social]]
     icon = "osf"
     icon_pack = "ai"
-    link = "//osf.io/jw7qh"
+    link = "osf.io/jw7qh"
 
   [[params.social]]
     icon = "orcid"
