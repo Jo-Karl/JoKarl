@@ -18,7 +18,7 @@ copyright = "&copy; 2018"
 theme = "hugo-academic"
 enableEmoji = true
 footnotereturnlinkcontents = "<sup>^</sup>"
-ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+ignoreFiles = ["_files$", "_cache$"]
 preserveTaxonomyNames = true
 paginate = 10
 
@@ -109,7 +109,7 @@ enableGitInfo = false
   #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
   date_format = "Jan 2, 2006"
   #   Examples: "3:04 pm" or "15:04"
-  time_format = "3:04 PM"
+  time_format = "15:04"
 
   # Show estimated reading time for posts?
   reading_time = true
@@ -194,7 +194,7 @@ enableGitInfo = false
   [params.publications]
     # Date format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
     #   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
-    date_format = "January, 2006"
+    date_format = "Mon, Jan 2, 2006"
 
   # Configuration of project pages.
   [params.projects]
@@ -232,7 +232,7 @@ enableGitInfo = false
     link = "mailto:johannes.karl@vuw.ac.nz"
 
   [[params.social]]
-    icon = "twitter"
+    icon = "twitter-square"
     icon_pack = "fa"
     link = "//twitter.com/J_A_Karl"
 
@@ -246,6 +246,11 @@ enableGitInfo = false
     icon_pack = "ai"
     link = "//osf.io/jw7qh"
 
+  [[params.social]]
+    icon = "orcid"
+    icon_pack = "ai"
+    link = " https://orcid.org/0000-0001-5166-0728"
+    
    #Link to a PDF of your resume/CV from the About widget.
    #To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
    [[params.social]]
