@@ -19,7 +19,7 @@ header:
 ```{r loading data, include = F}
 library(tidyverse)
 setwd(here::here())
-data_long <- read_csv("data/errorbars.csv")
+data_long <- read_csv("static/files/errorbars.csv")
 
 ```
 
