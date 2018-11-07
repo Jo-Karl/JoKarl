@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ggplot2 on </title>
+    <link>/tags/ggplot2/</link>
+    <description>Recent content in ggplot2 on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Sun, 07 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/ggplot2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Withing and Between-Subjects Errors</title>
+      <link>/post/withing-and-between-subjects-errors/</link>
+      <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/withing-and-between-subjects-errors/</guid>
+      <description>This is a very short post in which I want to highlight, because I realized that the issue is often overlooked by students when writing up their data. Today I want to highlight the difference between within- and between-subjects errors (With code examples).
+Imagine you have data like this example below. Participants responded to a number of mindfulness items multiple times during the day over the duration of a week.</description>
+    </item>
+    
+  </channel>
+</rss>

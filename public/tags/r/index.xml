@@ -7,18 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Tue, 04 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Equivalence Testing in R using MGCFA</title>
-      <link>/post/equivalence-testing-in-r-using-mgcfa/</link>
-      <pubDate>Tue, 04 Sep 2018 00:00:00 +0000</pubDate>
+      <title>Withing and Between-Subjects Errors</title>
+      <link>/post/withing-and-between-subjects-errors/</link>
+      <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/equivalence-testing-in-r-using-mgcfa/</guid>
-      <description>I am currently working on a project that aims to investigate the properties of a new psychological measure in different cultural samples. An often neglected aspect of this is equivalence testing (citation here). Equivalence of measurement instruments is a necessary preconditon for many group comparisons. So what is equivalence? In the shortest (and probably most inaccurate way) we could describe measurment equivalence as:&amp;ldquo;&amp;rdquo;. (Is there a difference between equivalence and invariance ?</description>
+      <guid>/post/withing-and-between-subjects-errors/</guid>
+      <description>This is a very short post in which I want to highlight, because I realized that the issue is often overlooked by students when writing up their data. Today I want to highlight the difference between within- and between-subjects errors (With code examples).
+Imagine you have data like this example below. Participants responded to a number of mindfulness items multiple times during the day over the duration of a week.</description>
     </item>
     
     <item>

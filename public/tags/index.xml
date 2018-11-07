@@ -31,24 +31,6 @@
     </item>
     
     <item>
-      <title>Cross-Cultural Methods</title>
-      <link>/tags/cross-cultural-methods/</link>
-      <pubDate>Tue, 04 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/cross-cultural-methods/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Equivalence</title>
-      <link>/tags/equivalence/</link>
-      <pubDate>Tue, 04 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/equivalence/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Green vs. Blue</title>
       <link>/tags/green-vs.-blue/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
@@ -96,7 +78,7 @@
     <item>
       <title>R</title>
       <link>/tags/r/</link>
-      <pubDate>Tue, 04 Sep 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/r/</guid>
       <description></description>
@@ -126,6 +108,24 @@
       <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
       
       <guid>/tags/well-being/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ggplot2</title>
+      <link>/tags/ggplot2/</link>
+      <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ggplot2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plotting</title>
+      <link>/tags/plotting/</link>
+      <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/plotting/</guid>
       <description></description>
     </item>
     
