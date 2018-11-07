@@ -1,4 +1,4 @@
-+++
+	+++
 # About/Biography widget.
 widget = "about"
 active = true
@@ -19,7 +19,7 @@ weight = 5
 [[education.courses]]
   course = "PhD Student in Psychology"
   institution = "Victoria University of Wellington"
-  year = 2018 - 2021
+  year = 2018 to 2021
 
 [[education.courses]]
   course = "MSc in Cross-Cultural Psychology"
