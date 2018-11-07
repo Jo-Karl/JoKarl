@@ -6,7 +6,7 @@
 
 # The URL of your website.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = "https://johanneskarl.netlify.com/"
+baseurl = "//johanneskarl.netlify.com/"
 
 # Title of your site
 title = ""
@@ -234,22 +234,22 @@ enableGitInfo = false
   [[params.social]]
     icon = "twitter-square"
     icon_pack = "fa"
-    link = "twitter.com/J_A_Karl"
+    link = "//twitter.com/J_A_Karl"
 
   [[params.social]]
     icon = "github"
     icon_pack = "fa"
-    link = "github.com/Jo-Karl"
+    link = "//github.com/Jo-Karl"
     
   [[params.social]]
     icon = "osf"
     icon_pack = "ai"
-    link = "osf.io/jw7qh"
+    link = "//osf.io/jw7qh"
 
   [[params.social]]
     icon = "orcid"
     icon_pack = "ai"
-    link = "orcid.org/0000-0001-5166-0728"
+    link = "//orcid.org/0000-0001-5166-0728"
     
    #Link to a PDF of your resume/CV from the About widget.
    #To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.

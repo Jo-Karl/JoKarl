@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>/</link>
+    <link>//johanneskarl.netlify.com/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Withing and Between-Subjects Errors</title>
-      <link>/post/withing-and-between-subjects-errors/</link>
+      <link>//johanneskarl.netlify.com/post/withing-and-between-subjects-errors/</link>
       <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/withing-and-between-subjects-errors/</guid>
+      <guid>//johanneskarl.netlify.com/post/withing-and-between-subjects-errors/</guid>
       <description>
 
 
@@ -50,7 +50,7 @@ within$day &amp;lt;- as.integer(within$day)&lt;/code&gt;&lt;/pre&gt;
   guides(colour = FALSE) + 
   labs(x = &amp;quot;Day&amp;quot;, y = &amp;quot;Short Mindfulness Scale&amp;quot;) +
   theme_classic()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/2018-11-07-withing-and-between-subjects-errors_files/figure-html/plotting-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;//johanneskarl.netlify.com/post/2018-11-07-withing-and-between-subjects-errors_files/figure-html/plotting-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
 &lt;div id=&#34;ref-Cousineau2017&#34;&gt;
 &lt;p&gt;Cousineau, Denis. 2017. “Varieties of Confidence Intervals.” &lt;em&gt;Advances in Cognitive Psychology&lt;/em&gt; 13 (2). University of Finance; Management in Warsaw: 140–55. doi:&lt;a href=&#34;https://doi.org/10.5709/acp-0214-z&#34;&gt;10.5709/acp-0214-z&lt;/a&gt;.&lt;/p&gt;
@@ -67,19 +67,19 @@ within$day &amp;lt;- as.integer(within$day)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Multi-dimensional scaling in R</title>
-      <link>/post/smacof/</link>
+      <link>//johanneskarl.netlify.com/post/smacof/</link>
       <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/smacof/</guid>
+      <guid>//johanneskarl.netlify.com/post/smacof/</guid>
       <description>
-&lt;script src=&#34;/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;/rmarkdown-libs/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;/rmarkdown-libs/typedarray/typedarray.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;/rmarkdown-libs/crosstalk/css/crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/rmarkdown-libs/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;/rmarkdown-libs/plotly-htmlwidgets-css/plotly-htmlwidgets.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;/rmarkdown-libs/plotly-main/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;//johanneskarl.netlify.com/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;//johanneskarl.netlify.com/rmarkdown-libs/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;//johanneskarl.netlify.com/rmarkdown-libs/typedarray/typedarray.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;//johanneskarl.netlify.com/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;//johanneskarl.netlify.com/rmarkdown-libs/crosstalk/css/crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;//johanneskarl.netlify.com/rmarkdown-libs/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;//johanneskarl.netlify.com/rmarkdown-libs/plotly-htmlwidgets-css/plotly-htmlwidgets.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;//johanneskarl.netlify.com/rmarkdown-libs/plotly-main/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;mds-basics&#34; class=&#34;section level1&#34;&gt;
@@ -148,7 +148,7 @@ stress_plot %&amp;gt;%
   geom_point() +
   geom_line() +
   theme_classic()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/2018-07-20-visualising-data-with-ggplot2_files/figure-html/scree-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;//johanneskarl.netlify.com/post/2018-07-20-visualising-data-with-ggplot2_files/figure-html/scree-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;This plot can be inspected to determine the appropriate number of dimensions. As you can see stress is monotonically decreasing with increasing dimensionality. At the start a step decline occurs and after a certain point stress decreases only marginally with increasing dimensionality. A commonly applied interpretation is to look for the &lt;em&gt;elbow&lt;/em&gt; of the scree plot, where decreases in stress become less pronounced. The rationale of this choice is that the elbow marks the point where MDS uses additional dimensions to essentially only scale the noise in the data, after having succeeded in representing the systematic structure in the given dimensionality m.&lt;/p&gt;
 &lt;p&gt;I find it also quite useful to look at the distance in stress between &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(n + 1\)&lt;/span&gt;. The plot below plots the difference in stress for each dimension in respect to the previous dimension (It is obviously 0 for the first dimension, therefore the plot starts with &lt;span class=&#34;math inline&#34;&gt;\(n = 2\)&lt;/span&gt;). We can see that the difference between &lt;span class=&#34;math inline&#34;&gt;\(n = 1\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(n = 2\)&lt;/span&gt; is similar in real and simulated data. The pattern remains the same in real and simulated data until &lt;span class=&#34;math inline&#34;&gt;\(n= 5\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(n = 6\)&lt;/span&gt;. At this point we see a clear deviation in the real data from the pattern in the random data. This could indicate that this could be considered the point of inflection.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;stress_plot %&amp;gt;%
@@ -158,7 +158,7 @@ stress_plot %&amp;gt;%
   geom_step() +
   xlim(2, max(stress_plot$dimension)) +
   theme_classic()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;/post/2018-07-20-visualising-data-with-ggplot2_files/figure-html/alternative-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt; I mentioned parallel analysis above. Some simulation studies on stress obtained from random data based on different &lt;em&gt;n&lt;/em&gt; and &lt;em&gt;m&lt;/em&gt; were conducted in the past (Cliff, 1973; Knoll, 1969; Klahr, 1969; Spence and Ogilvie, 1973). It might be promising to implent an approach that mirrors parallel analysis for stress values.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;//johanneskarl.netlify.com/post/2018-07-20-visualising-data-with-ggplot2_files/figure-html/alternative-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt; I mentioned parallel analysis above. Some simulation studies on stress obtained from random data based on different &lt;em&gt;n&lt;/em&gt; and &lt;em&gt;m&lt;/em&gt; were conducted in the past (Cliff, 1973; Knoll, 1969; Klahr, 1969; Spence and Ogilvie, 1973). It might be promising to implent an approach that mirrors parallel analysis for stress values.&lt;/p&gt;
 &lt;p&gt;In our current example this point could be point 4 based on the stress plot or 5/6 based on looking at drop in stress. A further problem that needs to be considered in MDS that if one intends to plot the resulting graph dimensions above 3 are hard to display and visually interpret. This makes trade offs between the goal of MDS, uncovering and visualising data structures, and statistical rigor necessary. I would use 3 dimensions, as they can still be visualised and their &lt;span class=&#34;math inline&#34;&gt;\(\sigma_1\)&lt;/span&gt; = 0.11 is low enough to assume acceptable representation of the underlying data.&lt;/p&gt;
 &lt;p&gt;So what is a acceptable stress value? Often quoted or rather misquoted at this point is Guttman (in Porrat, 1974). If you have a look online and even in some publications authors report that &lt;span class=&#34;math inline&#34;&gt;\(\sigma_1 &amp;lt;= .15\)&lt;/span&gt; represents a good value for an acceptably precise ordinal MDS solution. Citing again from Borg and Gronen:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -199,56 +199,56 @@ p&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Privacy Policy</title>
-      <link>/privacy/</link>
+      <link>//johanneskarl.netlify.com/privacy/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +1200</pubDate>
       
-      <guid>/privacy/</guid>
+      <guid>//johanneskarl.netlify.com/privacy/</guid>
       <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>The effect of blue and green spaces on physiology and affect</title>
-      <link>/publication/the-effect-of-blue-and-green-spaces-on-physiology-and-affect/</link>
+      <link>//johanneskarl.netlify.com/publication/the-effect-of-blue-and-green-spaces-on-physiology-and-affect/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>/publication/the-effect-of-blue-and-green-spaces-on-physiology-and-affect/</guid>
+      <guid>//johanneskarl.netlify.com/publication/the-effect-of-blue-and-green-spaces-on-physiology-and-affect/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rituals, repetitiveness and cognitive load: a competitive test of ritual benefits for stress</title>
-      <link>/publication/ritualsandanxiety/</link>
+      <link>//johanneskarl.netlify.com/publication/ritualsandanxiety/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +1300</pubDate>
       
-      <guid>/publication/ritualsandanxiety/</guid>
+      <guid>//johanneskarl.netlify.com/publication/ritualsandanxiety/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Landscape and Well-Being: Using Psychology to Inform Urban Planning</title>
-      <link>/talk/blue_welbeing/</link>
+      <link>//johanneskarl.netlify.com/talk/blue_welbeing/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
       
-      <guid>/talk/blue_welbeing/</guid>
+      <guid>//johanneskarl.netlify.com/talk/blue_welbeing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Methods in R</title>
-      <link>/project/methods/</link>
+      <link>//johanneskarl.netlify.com/project/methods/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
       
-      <guid>/project/methods/</guid>
+      <guid>//johanneskarl.netlify.com/project/methods/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mindfulness and Nature</title>
-      <link>/project/mindfulness/</link>
+      <link>//johanneskarl.netlify.com/project/mindfulness/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
       
-      <guid>/project/mindfulness/</guid>
+      <guid>//johanneskarl.netlify.com/project/mindfulness/</guid>
       <description></description>
     </item>
     

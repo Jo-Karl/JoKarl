@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>MDS on </title>
-    <link>/tags/mds/</link>
+    <link>//johanneskarl.netlify.com/tags/mds/</link>
     <description>Recent content in MDS on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Fri, 20 Jul 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/mds/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//johanneskarl.netlify.com/tags/mds/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Multi-dimensional scaling in R</title>
-      <link>/post/smacof/</link>
+      <link>//johanneskarl.netlify.com/post/smacof/</link>
       <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/smacof/</guid>
+      <guid>//johanneskarl.netlify.com/post/smacof/</guid>
       <description>MDS basicsThis post focuses on MDS (Also sometimes called smallest space analysis (Guttman, 1968) or multidimensional similarity structure analysis (Borg &amp;amp; Lingoes, 1987)) as exploratory tool and a large amount of the information is lifted from Borg and Gronen (2005) which I really recommend for further readings.
 Exploratory MDS might seem at first glance like tea-leaf reading, but over the years several rules have been developed that aid in determining structure from the MDS plots.</description>
     </item>

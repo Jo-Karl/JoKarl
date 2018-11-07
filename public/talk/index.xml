@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Recent &amp; Upcoming Talks on </title>
-    <link>/talk/</link>
+    <link>//johanneskarl.netlify.com/talk/</link>
     <description>Recent content in Recent &amp; Upcoming Talks on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +1300</lastBuildDate>
     
-	<atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="//johanneskarl.netlify.com/talk/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Landscape and Well-Being: Using Psychology to Inform Urban Planning</title>
-      <link>/talk/blue_welbeing/</link>
+      <link>//johanneskarl.netlify.com/talk/blue_welbeing/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
       
-      <guid>/talk/blue_welbeing/</guid>
+      <guid>//johanneskarl.netlify.com/talk/blue_welbeing/</guid>
       <description></description>
     </item>
     
