@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on </title>
-    <link>/post/</link>
-    <description>Recent content in Posts on </description>
+    <title>Equivalence on </title>
+    <link>/tags/equivalence/</link>
+    <description>Recent content in Equivalence on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +1300</lastBuildDate>
+    <lastBuildDate>Tue, 04 Sep 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/equivalence/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,16 +19,6 @@
       
       <guid>/post/equivalence-testing-in-r-using-mgcfa/</guid>
       <description>I am currently working on a project that aims to investigate the properties of a new psychological measure in different cultural samples. An often neglected aspect of this is equivalence testing (citation here). Equivalence of measurement instruments is a necessary preconditon for many group comparisons. So what is equivalence? In the shortest (and probably most inaccurate way) we could describe measurment equivalence as:&amp;ldquo;&amp;rdquo;. (Is there a difference between equivalence and invariance ?</description>
-    </item>
-    
-    <item>
-      <title>Multi-dimensional scaling in R</title>
-      <link>/post/smacof/</link>
-      <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/smacof/</guid>
-      <description>MDS basicsThis post focuses on MDS (Also sometimes called smallest space analysis (Guttman, 1968) or multidimensional similarity structure analysis (Borg &amp;amp; Lingoes, 1987)) as exploratory tool and a large amount of the information is lifted from Borg and Gronen (2005) which I really recommend for further readings.
-Exploratory MDS might seem at first glance like tea-leaf reading, but over the years several rules have been developed that aid in determining structure from the MDS plots.</description>
     </item>
     
   </channel>
