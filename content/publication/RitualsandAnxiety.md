@@ -41,16 +41,16 @@ projects = []
 tags = ["Ritual", "Stress", "Anxiety"]
 
 # Links (optional).
-url_pdf = ""
+url_pdf = "https://link.springer.com/article/10.1007%2Fs12110-018-9325-3"
 url_preprint = ""
 url_code = ""
-url_dataset = "//osf.io/rsu9x/"
+url_dataset = "osf.io/rsu9x/"
 url_project = ""
 url_slides = ""
 url_video = ""
 url_poster = ""
 url_source = ""
-url_preregistration = "//osf.io/rsu9x/"
+url_preregistration = "osf.io/rsu9x/"
 
 # Custom links (optional).
 #   Uncomment line below to enable. For multiple links, use the form `[{...}, {...}, {...}]`.
