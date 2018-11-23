@@ -1,0 +1,63 @@
+---
+title: Withing and Between-Subjects Errors
+author: Johannes Karl
+date: '2018-10-07'
+slug: withing-and-between-subjects-errors
+link-citations: true
+bibliography: [error.bib] 
+categories:
+  - R
+tags:
+  - R
+  - ggplot2
+  - plotting
+header:
+  caption: ''
+  image: ''
+---
+
+
+
+<p>This is a very short post in which I want to highlight, because I realized that the issue is often overlooked by students when writing up their data. Today I want to highlight the difference between within- and between-subjects errors (With code examples).</p>
+<p>Imagine you have data like this example below. Participants responded to a number of mindfulness items multiple times during the day over the duration of a week. For simplicity, I will only focus on days and not events during the day.</p>
+<pre><code>## # A tibble: 6 x 8
+##   number   day sms_1 sms_2 sms_3 sms_4 sms_5 sms_6
+##    &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt;
+## 1  18072     1     8     9     8     8     8     8
+## 2  18072     1     8     8     8     8     9     8
+## 3  18072     1     8     8     6     9     9     9
+## 4  18072     1     6     7     6     8     9     9
+## 5  18072     3     7     7     7     8     8     8
+## 6  18072     3     8     8     8     8     8     8</code></pre>
+<p>A natural first instinct if you have similar data would be to compute the means and standard errors, which would be fine if each row would be an independent observation. In our case this is not the case each participant answered seven surveys and the distinct possibility exists that some of the variance might be due to difference between participants. In R there is an easy way to account for this <span class="citation">(if you want to read more on the theoretical background I recommend Morey <a href="#ref-Morey2008">2008</a>; Franz and Loftus <a href="#ref-Franz2012">2012</a>; Cousineau <a href="#ref-Cousineau2017">2017</a>)</span>.</p>
+<p>The first function (<em>Rmisc::summarySE</em>) computes errors without considering that the observations are not independent. The second function (<em>Rmisc::summarySEwithin</em>) computes the errors accounting for the non-independent nature of the observations. We can now see that after only three days of journaling participants report higher scores of mindfulness, whereas using between-subjects errors we would conclude that there is no difference between the values on the third day and the baseline.</p>
+<pre class="r"><code>between &lt;- Rmisc::summarySE(data = data_long, measurevar = &quot;sms&quot;,
+                            groupvars = &quot;day&quot;)
+
+within &lt;- Rmisc::summarySEwithin(data = data_long, measurevar = &quot;sms&quot;,
+                                 withinvars = &quot;day&quot;,
+                                 idvar = &quot;number&quot;)
+
+within$day &lt;- as.integer(within$day)</code></pre>
+<p>Plotting the two different solutions, we can clearly see the difference. The between-subjects errors are in black and the within-subjects errors are in red. The within-subjects errors are considerably smaller as a result of accounting for the non-independence.</p>
+<pre class="r"><code>ggplot(between, aes(x = factor(day), y = sms, group = 1)) +
+  geom_line(stat = &quot;identity&quot;) +
+  geom_point() +
+  geom_errorbar(aes(ymin = sms - ci, ymax = sms + ci)) +
+  geom_errorbar(aes(ymin = sms - ci, ymax = sms + ci,
+                    colour = &quot;red1&quot;), data = within) +
+  guides(colour = FALSE) + 
+  labs(x = &quot;Day&quot;, y = &quot;Short Mindfulness Scale&quot;) +
+  theme_classic()</code></pre>
+<p><img src="/post/Errors/2018-11-07-withing-and-between-subjects-errors_files/figure-html/plotting-1.png" width="672" /></p>
+<div id="refs" class="references">
+<div id="ref-Cousineau2017">
+<p>Cousineau, Denis. 2017. “Varieties of Confidence Intervals.” <em>Advances in Cognitive Psychology</em> 13 (2). University of Finance; Management in Warsaw: 140–55. doi:<a href="https://doi.org/10.5709/acp-0214-z">10.5709/acp-0214-z</a>.</p>
+</div>
+<div id="ref-Franz2012">
+<p>Franz, Volker H, and Geoffrey R Loftus. 2012. “Standard errors and confidence intervals in within-subjects designs: generalizing Loftus and Masson (1994) and avoiding the biases of alternative accounts.” <em>Psychonomic Bulletin &amp; Review</em> 19 (3). Springer: 395–404. doi:<a href="https://doi.org/10.3758/s13423-012-0230-1">10.3758/s13423-012-0230-1</a>.</p>
+</div>
+<div id="ref-Morey2008">
+<p>Morey, Richard D. 2008. “Confidence Intervals from Normalized Data: A correction to Cousineau (2005).” <em>Tutorials in Quantitative Methods for Psychology</em> 4 (2): 61–64. doi:<a href="https://doi.org/10.20982/tqmp.04.2.p061">10.20982/tqmp.04.2.p061</a>.</p>
+</div>
+</div>

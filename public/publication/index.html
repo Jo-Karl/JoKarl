@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 3.1.0">
+  <meta name="generator" content="Source Themes Academic 3.1.1">
   <meta name="generator" content="Hugo 0.51" />
   <meta name="author" content="Johannes A. Karl">
 
@@ -18,7 +18,7 @@
   <meta name="description" content="PhD Student in Psychology">
 
   
-  <link rel="alternate" hreflang="en-us" href="//johanneskarl.netlify.com/publication/">
+  <link rel="alternate" hreflang="en-us" href="/publication/">
 
   
 
@@ -78,26 +78,26 @@
   
 
   
-  <link rel="alternate" href="//johanneskarl.netlify.com/publication/index.xml" type="application/rss+xml" title="">
-  <link rel="feed" href="//johanneskarl.netlify.com/publication/index.xml" type="application/rss+xml" title="">
+  <link rel="alternate" href="/publication/index.xml" type="application/rss+xml" title="">
+  <link rel="feed" href="/publication/index.xml" type="application/rss+xml" title="">
   
 
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="//johanneskarl.netlify.com/publication/">
+  <link rel="canonical" href="/publication/">
 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="">
-  <meta property="og:url" content="//johanneskarl.netlify.com/publication/">
+  <meta property="og:url" content="/publication/">
   <meta property="og:title" content="Publications | ">
   <meta property="og:description" content="PhD Student in Psychology">
   
   
     
-  <meta property="og:image" content="//johanneskarl.netlify.com/img/icon-192.png">
+  <meta property="og:image" content="/img/icon-192.png">
   <meta property="og:locale" content="en-us">
   
   <meta property="og:updated_time" content="2017-01-01T00:00:00&#43;13:00">
@@ -111,6 +111,37 @@
 
 </head>
 <body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" class="dark">
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header fixed-top">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
 
 <nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
   <div class="container">
@@ -119,7 +150,7 @@
       <a class="navbar-brand" href="/"></a>
       
       <button type="button" class="navbar-toggler" data-toggle="collapse"
-              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="">
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
         <span><i class="fas fa-bars"></i></span>
       </button>
       
@@ -160,7 +191,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link" href="/#publications">
+          <a class="nav-link" href="/#publications_selected">
             
             <span>Publications</span>
             
@@ -195,12 +226,14 @@
         
         
           
+            
+          
         
 
         <li class="nav-item">
-          <a class="nav-link" href="/#projects">
+          <a class="nav-link" href="https://mindcultureevolution.com/" target="_blank" rel="noopener">
             
-            <span>Projects</span>
+            <span>VUW Evolutionary Psychology</span>
             
           </a>
         </li>
@@ -217,26 +250,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link" href="/#contact">
-            
-            <span>Contact</span>
-            
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link" href="/files/Johannes%20Karl%20CV.pdf">
+          <a class="nav-link" href="/files/cv.pdf">
             
             <span>CV</span>
             
@@ -248,6 +262,12 @@
 
       
 
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
         
 
         
@@ -302,11 +322,11 @@
 
       <div class="form-row mb-3">
         <div class="col-auto">
-          :
+          Filter by type:
         </div>
         <div class="col-auto">
           <select class="pub-filters pubtype-select form-control form-control-sm" data-filter-group="pubtype">
-            <option value="*"></option>
+            <option value="*">All</option>
             
             <option value=".pubtype-2">
               Journal article
@@ -316,7 +336,7 @@
         </div>
         <div class="col-auto">
           <select class="pub-filters form-control form-control-sm" data-filter-group="year">
-            <option value="*"></option>
+            <option value="*">All</option>
             
             
             
@@ -364,21 +384,21 @@
 
 <button type="button" class="btn btn-outline-primary my-1 mr-1 btn-sm js-cite-modal"
         data-filename="/publication/anxiety/cite.bib">
-  
+  Cite
 </button>
 
 
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://osf.io/rsu9x" target="_blank" rel="noopener">
-  
+  Code
 </a>
 
 
 
 
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="http://osf.io/rsu9x" target="_blank" rel="noopener">
-  
+  Dataset
 </a>
 
 
@@ -407,10 +427,6 @@
 <div class="container">
   <footer class="site-footer">
   
-  <p class="powered-by">
-    <a href="/privacy/">Privacy Policy</a>
-  </p>
-  
 
   <p class="powered-by">
     &copy; 2018 &middot; 
@@ -438,7 +454,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title"></h5>
+        <h5 class="modal-title">Cite</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -448,10 +464,10 @@
       </div>
       <div class="modal-footer">
         <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> 
+          <i class="fas fa-copy"></i> Copy
         </a>
         <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> 
+          <i class="fas fa-download"></i> Download
         </a>
         <div id="modal-error"></div>
       </div>
@@ -464,8 +480,7 @@
     
     
     
-    
-    <script src="/js/mathjax-config.83b2a65cc1ca1f6c27c3f6943cbc37b88095532149bd65090e1ace0fafa090299c14cc980ebb55fed8a2b67507f355d0ff8f2e7beb5d5b7cd5903f53c74df423.js" integrity="sha512-g7KmXMHKH2wnw/aUPLw3uICVUyFJvWUJDhrOD6&#43;gkCmcFMyYDrtV/tiitnUH81XQ/48ue&#43;tdW3zVkD9Tx030Iw=="></script>
+    <script src="/js/mathjax-config.js"></script>
     
 
     
@@ -489,9 +504,6 @@
       
     
 
-    <script src="/js/hugo-academic.js"></script>
-    
-
     
     
 
@@ -509,15 +521,15 @@
     <script>
       const search_index_filename = "/index.json";
       const i18n = {
-        'placeholder': "",
-        'results': "",
-        'no_results': ""
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
       };
       const content_type = {
-        'post': "",
-        'project': "",
-        'publication' : "",
-        'talk' : ""
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
         };
     </script>
     
@@ -526,11 +538,39 @@
     
 
     
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
 
     
     
 
     
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.74b0d3361475b08c40cf31120e82937b.js"></script>
+
     
 
   </body>

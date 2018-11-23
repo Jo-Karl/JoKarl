@@ -20,7 +20,7 @@ event_url = "http://www.confer.nz/wellbeingandpublicpolicy2018/"
 location = "Wellington, New Zealand"
 
 # Is this a selected talk? (true/false)
-selected = true
+selected = false
 
 # Projects (optional).
 #   Associate this talk with one or more of your projects.
@@ -35,9 +35,9 @@ tags = ["Green vs. Blue", "Well-being"]
 
 # Links (optional).
 url_pdf = ""
-url_slides = ""
+url_slides = "https://www.dropbox.com/s/dpam82ckw9ipm9f/Well-being.pptx?dl=0"
 url_video = ""
-url_code = ""
+url_code = "https://osf.io/3d7ap/"
 
 # Does the content use math formatting?
 math = true
