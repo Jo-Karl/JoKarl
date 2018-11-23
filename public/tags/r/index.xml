@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 07 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="//johanneskarl.netlify.com/tags/r/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Introduction to R Workhop</title>
+      <link>//johanneskarl.netlify.com/post/introduction-to-r-workhop/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>//johanneskarl.netlify.com/post/introduction-to-r-workhop/</guid>
+      <description>This week I ran two Introduction to R workshops at the Victoria University of Wellington School of Psychology. If you are interested in downloading the slides you can find them here.</description>
+    </item>
     
     <item>
       <title>Withing and Between-Subjects Errors</title>

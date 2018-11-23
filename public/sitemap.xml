@@ -4,6 +4,22 @@
     
     <url>
     
+      <loc>//johanneskarl.netlify.com/publication/anxiety/</loc>
+      <lastmod>2018-11-23T13:06:41+13:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>//johanneskarl.netlify.com/post/introduction-to-r-workhop/</loc>
+      <lastmod>2018-11-22T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>//johanneskarl.netlify.com/post/withing-and-between-subjects-errors/</loc>
       <lastmod>2018-10-07T00:00:00+00:00</lastmod>
     </url>
@@ -22,22 +38,6 @@
     
       <loc>//johanneskarl.netlify.com/privacy/</loc>
       <lastmod>2018-06-28T00:00:00+12:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>//johanneskarl.netlify.com/publication/the-effect-of-blue-and-green-spaces-on-physiology-and-affect/</loc>
-      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>//johanneskarl.netlify.com/publication/ritualsandanxiety/</loc>
-      <lastmod>2018-01-01T00:00:00+13:00</lastmod>
     </url>
     
   
@@ -101,35 +101,15 @@
     
     <url>
     
+      <loc>//johanneskarl.netlify.com/post/mds/</loc>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>//johanneskarl.netlify.com/publication_types/2/</loc>
-      <lastmod>2018-01-01T00:00:00+13:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>//johanneskarl.netlify.com/publication_types/3/</loc>
-      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>//johanneskarl.netlify.com/tags/anxiety/</loc>
-      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>//johanneskarl.netlify.com/tags/blue-vs.-green/</loc>
-      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+      <lastmod>2018-11-23T13:06:41+13:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -191,7 +171,7 @@
     <url>
     
       <loc>//johanneskarl.netlify.com/tags/nature/</loc>
-      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -209,7 +189,7 @@
     <url>
     
       <loc>//johanneskarl.netlify.com/publication_types/</loc>
-      <lastmod>2018-01-01T00:00:00+13:00</lastmod>
+      <lastmod>2018-11-23T13:06:41+13:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -218,7 +198,7 @@
     <url>
     
       <loc>//johanneskarl.netlify.com/tags/r/</loc>
-      <lastmod>2018-10-07T00:00:00+00:00</lastmod>
+      <lastmod>2018-11-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -227,25 +207,7 @@
     <url>
     
       <loc>//johanneskarl.netlify.com/categories/r/</loc>
-      <lastmod>2018-10-07T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>//johanneskarl.netlify.com/tags/ritual/</loc>
-      <lastmod>2018-01-01T00:00:00+13:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>//johanneskarl.netlify.com/tags/stress/</loc>
-      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+      <lastmod>2018-11-22T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -254,7 +216,7 @@
     <url>
     
       <loc>//johanneskarl.netlify.com/tags/</loc>
-      <lastmod>2018-01-01T00:00:00+00:00</lastmod>
+      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
       <priority>0</priority>
     </url>
     

@@ -2,6 +2,7 @@
 title: "Multi-dimensional scaling in R"
 author: "Johannes Karl"
 date: '2018-07-20'
+reading_time: true
 output:
   html_document:
     df_print: paged
@@ -9,7 +10,7 @@ output:
   word_document: default
 header:
   caption: ''
-  image: ''
+  image: '' 
 slug: smacof
 tags:
 - MDS

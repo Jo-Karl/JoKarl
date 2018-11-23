@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>Introduction to R Workhop</title>
+      <link>//johanneskarl.netlify.com/post/introduction-to-r-workhop/</link>
+      <pubDate>Thu, 22 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>//johanneskarl.netlify.com/post/introduction-to-r-workhop/</guid>
+      <description>This week I ran two Introduction to R workshops at the Victoria University of Wellington School of Psychology. If you are interested in downloading the slides you can find them here.</description>
+    </item>
+    
+    <item>
       <title>Withing and Between-Subjects Errors</title>
       <link>//johanneskarl.netlify.com/post/withing-and-between-subjects-errors/</link>
       <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
@@ -28,6 +37,16 @@ Imagine you have data like this example below. Participants responded to a numbe
       <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>//johanneskarl.netlify.com/post/smacof/</guid>
+      <description>MDS basicsThis post focuses on MDS (Also sometimes called smallest space analysis (Guttman, 1968) or multidimensional similarity structure analysis (Borg &amp;amp; Lingoes, 1987)) as exploratory tool and a large amount of the information is lifted from Borg and Gronen (2005) which I really recommend for further readings.
+Exploratory MDS might seem at first glance like tea-leaf reading, but over the years several rules have been developed that aid in determining structure from the MDS plots.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>//johanneskarl.netlify.com/post/mds/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//johanneskarl.netlify.com/post/mds/</guid>
       <description>MDS basicsThis post focuses on MDS (Also sometimes called smallest space analysis (Guttman, 1968) or multidimensional similarity structure analysis (Borg &amp;amp; Lingoes, 1987)) as exploratory tool and a large amount of the information is lifted from Borg and Gronen (2005) which I really recommend for further readings.
 Exploratory MDS might seem at first glance like tea-leaf reading, but over the years several rules have been developed that aid in determining structure from the MDS plots.</description>
     </item>
