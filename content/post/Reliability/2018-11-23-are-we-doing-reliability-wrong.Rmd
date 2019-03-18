@@ -1,9 +1,13 @@
 ---
 title: Are we doing Reliability wrong?
-author: ~
+author: Johannes Karl
 date: '2018-11-23'
 slug: are-we-doing-reliability-wrong
-categories: []
+categories:
+  - R
+  - Reliability
+  - Statistics
+link-citations: true
 bibliography: [reliability.bib] 
 tags: []
 math: true
