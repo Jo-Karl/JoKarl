@@ -13,16 +13,6 @@
     
     
     <item>
-      <title>Are we doing Reliability wrong?</title>
-      <link>/post/are-we-doing-reliability-wrong/</link>
-      <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/are-we-doing-reliability-wrong/</guid>
-      <description>The BackgroundThis post is in essence a summary of McNeish’s (2018) and Raykov and Marcoulides’s (2017) “exchange” on reliability measurement using Cronbach’s alpha. I want to add a few additional perspectives to this topic and provide a short How-To in R.
-What is reliabilityMany students might learn what reliability is, but once they reach research praxis they often have forgotten the details and what remains is the \(\alpha &amp;gt; .</description>
-    </item>
-    
-    <item>
       <title>Introduction to R</title>
       <link>/post/r-intro/introduction-to-r/</link>
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
@@ -49,6 +39,15 @@ Imagine you have data like this example below. Participants responded to a numbe
       <guid>/post/mds/smacof/</guid>
       <description>MDS basicsThis post focuses on MDS (Also sometimes called smallest space analysis (Guttman, 1968) or multidimensional similarity structure analysis (Borg &amp;amp; Lingoes, 1987)) as exploratory tool and a large amount of the information is lifted from Borg and Gronen (2005) which I really recommend for further readings.
 Exploratory MDS might seem at first glance like tea-leaf reading, but over the years several rules have been developed that aid in determining structure from the MDS plots.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/post/reliability/2018-11-23-are-we-doing-reliability-wrong/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/reliability/2018-11-23-are-we-doing-reliability-wrong/</guid>
+      <description>Are we doing Reliability wrong?code{white-space: pre;}pre:not([class]) {background-color: white;}if (window.hljs) {hljs.configure({languages: []});hljs.initHighlightingOnLoad();if (document.readyState &amp;&amp; document.readyState === &#34;complete&#34;) {window.setTimeout(function() { hljs.initHighlighting(); }, 0);}}h1 {font-size: 34px;}h1.title {font-size: 38px;}h2 {font-size: 30px;}h3 {font-size: 24px;}h4 {font-size: 18px;}h5 {font-size: 16px;}h6 {font-size: 12px;}.</description>
     </item>
     
   </channel>

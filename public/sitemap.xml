@@ -12,14 +12,6 @@
     
     <url>
     
-      <loc>/post/are-we-doing-reliability-wrong/</loc>
-      <lastmod>2018-11-23T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/post/r-intro/introduction-to-r/</loc>
       <lastmod>2018-11-23T00:00:00+00:00</lastmod>
     </url>
@@ -79,6 +71,13 @@
       <loc>/</loc>
       <lastmod>2017-10-15T00:00:00+13:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/reliability/2018-11-23-are-we-doing-reliability-wrong/</loc>
     </url>
     
   
