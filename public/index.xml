@@ -65,7 +65,7 @@
 &amp;quot;flourishing_2&amp;quot;, &amp;quot;flourishing_3&amp;quot;, &amp;quot;flourishing_4&amp;quot;,
 &amp;quot;flourishing_5&amp;quot;, &amp;quot;flourishing_6&amp;quot;, &amp;quot;flourishing_7&amp;quot;, &amp;quot;flourishing_8&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Let’s get the theoretical assumpitions out of the way first. Regarding assumption 1, we know that the scale is not uni-dimensional, because it is made up from two distinct scales. We can support this looking at the scree plot below (the paralell analysis would show one factor, but for the sake of argument let’s assume the scree is right.)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;reliability_files/figure-html/paralelle-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/Reliability/omega_files/figure-html/paralelle-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;So we can see we already violate one assumption of Cronbach’s &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;. You can see similar things in many publications that first report the reliability of facets (e.g. mindfulness) and then report the overall reliability.&lt;/p&gt;
 &lt;p&gt;Assumption 2 can be split into the requirement that the data is continous, which Likert-type scales are arguably not &lt;span class=&#34;citation&#34;&gt;(for disagreeing stances see: Norman &lt;a href=&#34;#ref-Norman2010&#34;&gt;2010&lt;/a&gt;; Carifio and Perla &lt;a href=&#34;#ref-Carifio2007&#34;&gt;2007&lt;/a&gt;)&lt;/span&gt;. For brevities sake I avoid this discussion for now, on the other hand we can assess normality of our data quite easily. As shown below none of our items is normally distributed.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;##            Test      Variable Statistic   p value Normality
@@ -89,7 +89,7 @@
 &lt;h1&gt;Alternatives&lt;/h1&gt;
 &lt;p&gt;So what are the alternatives to alpha. First I do not think that we need to replace alpha for now Raykov and Marcoulides &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-Raykov2017&#34;&gt;2017&lt;/a&gt;)&lt;/span&gt; make some interesting points on its contiued usage. So instead of replacing it, we could try supplementing it. Alternatives suggested by McNeish &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-McNeish2018&#34;&gt;2018&lt;/a&gt;)&lt;/span&gt; are omega total, and GLB. So how would we compute those reliabilities. We have a number of options from different packages, such as the &lt;em&gt;psych&lt;/em&gt; package.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;psy_omega &amp;lt;- psych::omega(dat[wll], nfactors = 2, poly = F)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;reliability_files/figure-html/omega-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/Reliability/omega_files/figure-html/omega-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;psy_omega&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Omega 
 ## Call: psych::omega(m = dat[wll], nfactors = 2, poly = F)
@@ -165,7 +165,7 @@
 ##              Omega (total): 0.93
 ##       Omega (hierarchical): 0.81
 ##    Revelle&amp;#39;s omega (total): 0.95
-## Greatest Lower Bound (GLB): 0.96
+## Greatest Lower Bound (GLB): 0.95
 ##              Coefficient H: 0.94
 ##           Cronbach&amp;#39;s alpha: 0.93
 ## Confidence intervals:
