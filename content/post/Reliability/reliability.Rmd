@@ -1,19 +1,17 @@
 ---
-title: Are we doing Reliability wrong?
+title: What's the deal with omega
 author: Johannes Karl
-date: '2018-11-23'
-slug: are-we-doing-reliability-wrong
-categories:
-  - R
-  - Reliability
-  - Statistics
+date: '2018-10-07'
+slug: omega
 link-citations: true
 bibliography: [reliability.bib] 
-tags: []
-math: true
-image:
+categories:
+  - R
+tags:
+  - R
+header:
   caption: ''
-  focal_point: ''
+  image: ''
 ---
 
 ```{r data, include = F}

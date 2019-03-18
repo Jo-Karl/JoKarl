@@ -13,6 +13,16 @@
     
     
     <item>
+      <title>What&#39;s the deal with omega</title>
+      <link>/post/reliability/omega/</link>
+      <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/reliability/omega/</guid>
+      <description>The BackgroundThis post is in essence a summary of McNeish’s (2018) and Raykov and Marcoulides’s (2017) “exchange” on reliability measurement using Cronbach’s alpha. I want to add a few additional perspectives to this topic and provide a short How-To in R.
+What is reliabilityMany students might learn what reliability is, but once they reach research praxis they often have forgotten the details and what remains is the \(\alpha &amp;gt; .</description>
+    </item>
+    
+    <item>
       <title>Withing and Between-Subjects Errors</title>
       <link>/post/errors/withing-and-between-subjects-errors/</link>
       <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>

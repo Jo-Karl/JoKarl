@@ -20,6 +20,14 @@
     
     <url>
     
+      <loc>/post/reliability/omega/</loc>
+      <lastmod>2018-10-07T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/post/errors/withing-and-between-subjects-errors/</loc>
       <lastmod>2018-10-07T00:00:00+00:00</lastmod>
     </url>
@@ -77,13 +85,6 @@
     
     <url>
     
-      <loc>/post/reliability/2018-11-23-are-we-doing-reliability-wrong/</loc>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/publication_types/2/</loc>
       <lastmod>2018-11-23T13:06:41+13:00</lastmod>
       <priority>0</priority>
@@ -110,7 +111,7 @@
     
     <url>
     
-      <loc>/tags/mds/</loc>
+      <loc>/categories/mds/</loc>
       <lastmod>2018-07-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -119,7 +120,7 @@
     
     <url>
     
-      <loc>/categories/mds/</loc>
+      <loc>/tags/mds/</loc>
       <lastmod>2018-07-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -137,7 +138,7 @@
     
     <url>
     
-      <loc>/tags/r/</loc>
+      <loc>/categories/r/</loc>
       <lastmod>2018-10-07T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -146,7 +147,7 @@
     
     <url>
     
-      <loc>/categories/r/</loc>
+      <loc>/tags/r/</loc>
       <lastmod>2018-10-07T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
