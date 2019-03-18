@@ -20,6 +20,78 @@
     </item>
     
     <item>
+      <title>Are we doing Reliability wrong?</title>
+      <link>/post/are-we-doing-reliability-wrong/</link>
+      <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/are-we-doing-reliability-wrong/</guid>
+      <description>
+
+
+&lt;div id=&#34;the-background&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;The Background&lt;/h1&gt;
+&lt;p&gt;This post is in essence a summary of McNeish’s &lt;span class=&#34;citation&#34;&gt;(2018)&lt;/span&gt; and Raykov and Marcoulides’s &lt;span class=&#34;citation&#34;&gt;(2017)&lt;/span&gt; “exchange” on reliability measurement using Cronbach’s alpha. I want to add a few additional perspectives to this topic and provide a short How-To in R.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;what-is-reliability&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;What is reliability&lt;/h1&gt;
+&lt;p&gt;Many students might learn what reliability is, but once they reach research praxis they often have forgotten the details and what remains is the &lt;span class=&#34;math inline&#34;&gt;\(\alpha &amp;gt; .70\)&lt;/span&gt; rule. To address this issue first, this rule was not suggested by Cronbach. The cut-off was suggested by Nunnally &lt;span class=&#34;citation&#34;&gt;(&lt;span class=&#34;citeproc-not-found&#34; data-reference-id=&#34;Nunnally1994&#34;&gt;&lt;strong&gt;???&lt;/strong&gt;&lt;/span&gt;)&lt;/span&gt;. Let’s see what the original source says:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“A satisfactory level of reliability depends on how a measure is being used. In the early stages of predictive or construct validation research, time and energy can be saved using instruments that have only modest reliability, e.g., .70. If significant correlations are found, corrections for attenuation will estimate how much the correlations will increase when reliabilities of measures are increased. If these corrected values look promising, it will be worth the time and effort to increase the number of items and reduce much beyond .80 in basic research is often wasteful of time and money. Measurement error attenuates correlations very little at that level. Strenuous and unnecessary efforts at standardization in addition to increasing the number of items might be required to obtain a reliability of, say, .90. In contrast to the standards used to compare groups, a reliability of .80 may not be nearly high enough in making decisions about individuals. Group research is often concerned with the size of correlations and with mean differences among experimental treatments, for which a reliability of .80 is adequate. However, a great deal hinges on the exact test scores when decisions are made about individuals. If, for example, children with IQs below 70 are to be placed in special classes, it may make a great deal of difference whether a child has an IQ of 65 or 75 on a particular test. When selection standards are quite rigorous, decisions depend on very small score differences, and so it is difficult to accept any measurement error. We have noted that the standard error of measurement is almost one-third as large as the overall standard deviation of test scores even when the reliability is .90. If important decisions are made with respect to specific test scores, a reliability of .90 is the bare minimum, and a reliability of .95 should be considered the desirable standard. However, never switch to a less valid measure simply because it is more reliable.” (pp.264)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;To boil down what Nunnally said; reliability can never replace validity, the reliability your measure should achieve is dependent on the context of application. The commonly applied rule of .70 is fitting for some contexts. Specifically contexts where one wants to save time and effort. Lance, Butts, and Michels &lt;span class=&#34;citation&#34;&gt;(&lt;span class=&#34;citeproc-not-found&#34; data-reference-id=&#34;Lance2006&#34;&gt;&lt;strong&gt;???&lt;/strong&gt;&lt;/span&gt;)&lt;/span&gt; make the important point that this is not a context that applies in most published papers. In most contexts we would want &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; to be over .80 and over .90 | .95 if we make judgments about individuals based on this test, such as personality questionnaires used for hiring.&lt;/p&gt;
+&lt;p&gt;In the discussion on the applicability of &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; Nunnally makes statements such as:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Coefficient a usually provides a good estimate of reliability because sampling of content is usually the major source of measurement error for static constructs and also because it is sensitive to the”sampling&amp;quot; of situational factors as well as item content.&amp;quot; (p.252)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;But what is the “usual” case which Nunnally assumes. We could assume that it is the case in which the underlying assumption of &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; are met. Let’s have a look at these assumptions to better appreciate Nunnally’s usual case. I am paraphrasing in this section from the excellent article by McNeish &lt;span class=&#34;citation&#34;&gt;(2018)&lt;/span&gt; and I highly recommend reading it for a more detailed discussion.&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;The scale is uni-dimensional.&lt;/li&gt;
+&lt;li&gt;Scale items are on a continuous scale and normally distributed.&lt;/li&gt;
+&lt;li&gt;The scale adheres to tau equivalence.&lt;/li&gt;
+&lt;li&gt;The errors of the items do not covary.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Let’s step through a normal scale we could find in our data, such as well-being. Participants answered a scale on flourishing and a scale on satisfaction with life. Because we are interested in overall well-being, we decided to combine the individual items into a single score.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;wll &amp;lt;- c(&amp;quot;swls_1&amp;quot;, &amp;quot;swls_2&amp;quot;, &amp;quot;swls_3&amp;quot;, &amp;quot;swls_4&amp;quot;, &amp;quot;swls_5&amp;quot;, &amp;quot;flourishing_1&amp;quot;,
+&amp;quot;flourishing_2&amp;quot;, &amp;quot;flourishing_3&amp;quot;, &amp;quot;flourishing_4&amp;quot;,
+&amp;quot;flourishing_5&amp;quot;, &amp;quot;flourishing_6&amp;quot;, &amp;quot;flourishing_7&amp;quot;, &amp;quot;flourishing_8&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Let’s get the theoretical assumpitions out of the way first. Regarding assumption 1, we know that the scale is not uni-dimensional, because it is made up from two distinct scales. We can support this looking at the scree plot below (the paralell analysis would show one factor, but for the sake of argument let’s assume the scree is right.)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2018-11-23-are-we-doing-reliability-wrong_files/figure-html/paralelle-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;## sROC 0.1-2 loaded&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;So we can see we already violate one assumption of Cronbach’s &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;. You can see similar things in many publications that first report the reliability of facets (e.g. mindfulness) and then report the overall reliability.&lt;/p&gt;
+&lt;p&gt;Assumption 2 can be split into the requirement that the data is continous, which Likert-type scales are arguably not &lt;span class=&#34;citation&#34;&gt;(for disagreeing stances see: &lt;span class=&#34;citeproc-not-found&#34; data-reference-id=&#34;Norman2010&#34;&gt;&lt;strong&gt;???&lt;/strong&gt;&lt;/span&gt;)&lt;/span&gt;. For brevities sake I avoid this discussion for now, on the other hand we can assess normality of our data quite easily. As shown below none of our items is normally distributed.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;##            Test      Variable Statistic   p value Normality
+## 1  Shapiro-Wilk    swls_1        0.9280  &amp;lt;0.001      NO    
+## 2  Shapiro-Wilk    swls_2        0.8924  &amp;lt;0.001      NO    
+## 3  Shapiro-Wilk    swls_3        0.9018  &amp;lt;0.001      NO    
+## 4  Shapiro-Wilk    swls_4        0.9118  &amp;lt;0.001      NO    
+## 5  Shapiro-Wilk    swls_5        0.9215  &amp;lt;0.001      NO    
+## 6  Shapiro-Wilk flourishing_1    0.9110  &amp;lt;0.001      NO    
+## 7  Shapiro-Wilk flourishing_2    0.8474  &amp;lt;0.001      NO    
+## 8  Shapiro-Wilk flourishing_3    0.9130  &amp;lt;0.001      NO    
+## 9  Shapiro-Wilk flourishing_4    0.8905  &amp;lt;0.001      NO    
+## 10 Shapiro-Wilk flourishing_5    0.8707  &amp;lt;0.001      NO    
+## 11 Shapiro-Wilk flourishing_6    0.8644  &amp;lt;0.001      NO    
+## 12 Shapiro-Wilk flourishing_7    0.8700  &amp;lt;0.001      NO    
+## 13 Shapiro-Wilk flourishing_8    0.8810  &amp;lt;0.001      NO&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Assumption 3 is also something we can test quite easily using SEM. We would just compare the fit of the unrestricted model to a model that restricts the loadings of all items on the latent variable to be identical. If we find no substantial decrease in fit we could conclude that we have tau-equivalence. There is also a number of packages that allow you to test for tau-equivalence of your data such as the coefficientalpha package (Which does not seem to be still actively developed and has not the best documentation for functions). In our current case we do not have tau-equivalence.&lt;/p&gt;
+&lt;p&gt;Assumption 4 is again something that could be easily assessed using a SEM approach. For brevities sake I will omit this, as I think my point is clear. In essence, many commonly used scales violate the assumptions of &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;. And independent of the size of the impact we should strife to use as fitting methods as possible.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;alternatives&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Alternatives&lt;/h1&gt;
+&lt;p&gt;So what are the alternatives to alpha. First I do not think that we need to replace alpha for now Raykov and Marcoulides &lt;span class=&#34;citation&#34;&gt;(2017)&lt;/span&gt; make some interesting points on its contiued usage. So instead of replacing it, we could try supplementing it.&lt;/p&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-McNeish2018&#34;&gt;
+&lt;p&gt;McNeish, Daniel. 2018. “Thanks coefficient alpha, we’ll take it from here.” &lt;em&gt;Psychological Methods&lt;/em&gt; 23 (3): 412–33. doi:&lt;a href=&#34;https://doi.org/10.1037/met0000144&#34;&gt;10.1037/met0000144&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Raykov2017&#34;&gt;
+&lt;p&gt;Raykov, Tenko, and George A. Marcoulides. 2017. “Thanks Coefficient Alpha, We Still Need You!” &lt;em&gt;Educational and Psychological Measurement&lt;/em&gt;, August. SAGE PublicationsSage CA: Los Angeles, CA, 001316441772512. doi:&lt;a href=&#34;https://doi.org/10.1177/0013164417725127&#34;&gt;10.1177/0013164417725127&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Introduction to R</title>
       <link>/post/r-intro/introduction-to-r/</link>
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
