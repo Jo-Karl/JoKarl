@@ -69,7 +69,7 @@ wll <- c("swls_1", "swls_2", "swls_3", "swls_4", "swls_5", "flourishing_1",
 
 Let's get the theoretical assumpitions out of the way first. Regarding assumption 1, we know that the scale is not uni-dimensional, because it is made up from two distinct scales. We can support this looking at the scree plot below (the paralell analysis would show one factor, but for the sake of argument let's assume the scree is right.)
 
-```{r paralelle, echo = F}
+```{r paralelle, echo = F, message = F}
 psych::scree(dat[wll])
 normal <- MVN::mvn(dat[wll])
 ```
@@ -88,11 +88,20 @@ Assumption 4 is again something that could be easily assessed using a SEM approa
 
 # Alternatives
 
-So what are the alternatives to alpha. First I do not think that we need to replace alpha for now Raykov and Marcoulides [-@Raykov2017] make some interesting points on its contiued usage. So instead of replacing it, we could try supplementing it. Alternatives suggested by McNeish [-@McNeish2018] are omega total, and GLB. So how would we compute those reliabilities. We have a number of options from different packages. 
+So what are the alternatives to alpha. First I do not think that we need to replace alpha for now Raykov and Marcoulides [-@Raykov2017] make some interesting points on its contiued usage. So instead of replacing it, we could try supplementing it. Alternatives suggested by McNeish [-@McNeish2018] are omega total, and GLB. So how would we compute those reliabilities. We have a number of options from different packages, such as the *psych* package. 
 
 
-```{r, omega}
+```{r, omega, warning = F, message = F}
 
 psy_omega <- psych::omega(dat[wll], nfactors = 2, poly = F)
+psy_omega
 ```
 
+I personally prefer the *userfriendlyscience* package, which containts the niffty reliability function.
+
+```{r, science, warning = F, message = F}
+
+sci_omega <- userfriendlyscience::reliability(dat[wll])
+```
+
+#References
