@@ -78,7 +78,7 @@ normal <- MVN::mvn(dat[wll])
 
 So we can see we already violate one assumption of Cronbach's $\alpha$. You can see similar things in many publications that first report the reliability of facets (e.g. mindfulness) and then report the overall reliability. 
 
-Assumption 2 can be split into the requirement that the data is continous, which Likert-type scales are arguably not [for disagreeing stances see: @Norman2010 and @Carifio2007]. For brevities sake I avoid this discussion for now, on the other hand we can assess normality of our data quite easily. As shown below none of our items is normally distributed. 
+Assumption 2 can be split into the requirement that the data is continous, which Likert-type scales are arguably not [for disagreeing stances see: @Norman2010; @Carifio2007]. For brevities sake I avoid this discussion for now, on the other hand we can assess normality of our data quite easily. As shown below none of our items is normally distributed. 
 
 ```{r normality, echo = F}
 normal$univariateNormality
