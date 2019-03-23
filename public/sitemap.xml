@@ -4,6 +4,14 @@
     
     <url>
     
+      <loc>/post/introduction-to-response-surface-analysis/</loc>
+      <lastmod>2019-03-23T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
       <loc>/publication/anxiety/</loc>
       <lastmod>2018-11-23T13:06:41+13:00</lastmod>
     </url>
@@ -139,7 +147,7 @@
     <url>
     
       <loc>/tags/r/</loc>
-      <lastmod>2018-10-07T00:00:00+00:00</lastmod>
+      <lastmod>2019-03-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -148,7 +156,25 @@
     <url>
     
       <loc>/categories/r/</loc>
-      <lastmod>2018-10-07T00:00:00+00:00</lastmod>
+      <lastmod>2019-03-23T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/rsa/</loc>
+      <lastmod>2019-03-23T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/stats/</loc>
+      <lastmod>2019-03-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -184,7 +210,7 @@
     <url>
     
       <loc>/tags/plotting/</loc>
-      <lastmod>2018-10-07T00:00:00+00:00</lastmod>
+      <lastmod>2019-03-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

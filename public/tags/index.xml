@@ -33,9 +33,18 @@
     <item>
       <title>R</title>
       <link>/tags/r/</link>
-      <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RSA</title>
+      <link>/tags/rsa/</link>
+      <pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/rsa/</guid>
       <description></description>
     </item>
     
@@ -60,7 +69,7 @@
     <item>
       <title>plotting</title>
       <link>/tags/plotting/</link>
-      <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/plotting/</guid>
       <description></description>
