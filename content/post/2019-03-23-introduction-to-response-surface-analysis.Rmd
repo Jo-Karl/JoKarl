@@ -14,4 +14,66 @@ image:
   caption: ''
   focal_point: ''
 ---
+
+```{r loading data, include = F}
+library(tidyverse)
+setwd(here::here())
+data_long <- read_csv("static/files/RSA.csv")
+data_long$attr <- rowMeans(data_long[c("Attr_1", "Attr_2")]) 
+data_long$val_cent <- data_long$Valence - 5
+data_long$aro_cent <- data_long$Arousal - 5
+data_long$val_cent2 <- data_long$val_cent * data_long$val_cent
+data_long$aro_cent2 <- data_long$aro_cent * data_long$aro_cent
+data_long$t_attr <- psych::rescale(data_long$attr,mean = 50, sd = 10)[[1]]
+```
+
 # The Theory
+
+Response Suface Analysis (RSA) is a method from the wider field of Response Surface Methodologies (RSM). 
+
+# Requirements
+
+1. Commensurable Scales
+
+     Commensurability explained as briefly as possible is that two scales are measured in the same
+     units. In the world of Likert-scales this mostly means they are measured on the same number of
+     points.
+     
+2. Centered on a Common Point
+
+     There is a number of ways this can be done. The most straight forward is probably to subtract 
+     scale midpoint from each participants score. This leaves participants with scores below the        theoretical midpoint with negative values and everyone else with positive values.
+     
+3. Participants can indicate high and low values on all scales
+     
+     This is more of a scale design than a analysis issue. Here it is important to consider if negatively worded items should need to be included in the scale or if the lowest level of a positively worded item is the lowest score a participant could indicate.
+     
+4. No Multicolliniearity
+    
+    In contrast to the previous requirement this one is actually testable. The easiest way of doing this would be to run a regression with all predictors and examine the Variance Inflation Factors (VIF). An example can be seen below where I predict attractiveness of a landscape from ratings of valence and arousal. valence and arousal are centered around the scale mid-point of 5. VIF values below **5** are generally considered acceptabily low to conclude that there is no mulitcolliniearity. 
+    
+    ```{r vif}
+car::vif(lm(attr ~ val_cent + aro_cent, data = data_long))
+```
+
+
+
+
+5. High Power
+
+
+# RSA How-To
+
+
+```{r RSA}
+library("RSA")
+rsa_sqd <- RSA(t_attr ~ val_cent * aro_cent, data = data_long, model = "full")
+
+summary(rsa_sqd)
+# PLOT THE ESTIMATED MODEL
+plot(rsa_sqd, legend=F, param=F,
+     axes=c("LOC", "LOIC","PA1"), 
+     project=c("LOC", "LOIC","PA1"), 
+     xlab="Valence", ylab="Arousal", zlab="Attractiveness"
+     )
+```
