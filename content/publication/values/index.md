@@ -49,9 +49,9 @@ slides = ""
 tags = []
 
 # Links (optional).
-url_preprint = "https://www.frontiersin.org/articles/10.3389/fpsyg.2019.00736/full?&utm_source=Email_to_authors_&utm_medium=Email&utm_content=T1_11.5e1_author&utm_campaign=Email_publication&field=&journalName=Frontiers_in_Psychology&id=383836"
+url_preprint = ""
 url_code = ""
-url_dataset = ""
+url_dataset = "https://osf.io/t8evu/"
 url_project = ""
 url_slides = ""
 url_video = ""
