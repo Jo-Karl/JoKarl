@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on </title>
-    <link>/post/</link>
+    <link>https://johanneskarl.netlify.com/post/</link>
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +1300</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://johanneskarl.netlify.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Tool Developement</title>
-      <link>/post/tool-developement/</link>
+      <link>https://johanneskarl.netlify.com/post/tool-developement/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/tool-developement/</guid>
+      <guid>https://johanneskarl.netlify.com/post/tool-developement/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Introduction to Response Surface Analysis </title>
-      <link>/post/introduction-to-response-surface-analysis/</link>
+      <link>https://johanneskarl.netlify.com/post/introduction-to-response-surface-analysis/</link>
       <pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/introduction-to-response-surface-analysis/</guid>
+      <guid>https://johanneskarl.netlify.com/post/introduction-to-response-surface-analysis/</guid>
       <description>The TheoryResponse Suface Analysis (RSA) is a method from the wider field of Response Surface Methodologies (RSM).
 RequirementsCommensurable Scales
 Commensurability explained as briefly as possible is that two scales are measured in the same units. In the world of Likert-scales this mostly means they are measured on the same number of points.
@@ -36,39 +36,39 @@ There is a number of ways this can be done.</description>
     
     <item>
       <title>Introduction to R</title>
-      <link>/post/r-intro/introduction-to-r/</link>
+      <link>https://johanneskarl.netlify.com/post/r-intro/introduction-to-r/</link>
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/r-intro/introduction-to-r/</guid>
+      <guid>https://johanneskarl.netlify.com/post/r-intro/introduction-to-r/</guid>
       <description>This week I ran two Introduction to R workshops at the Victoria University of Wellington School of Psychology. If you are interested in downloading the slides you can find them here.</description>
     </item>
     
     <item>
       <title>What&#39;s the deal with omega</title>
-      <link>/post/reliability/omega/</link>
+      <link>https://johanneskarl.netlify.com/post/reliability/omega/</link>
       <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/reliability/omega/</guid>
+      <guid>https://johanneskarl.netlify.com/post/reliability/omega/</guid>
       <description>The BackgroundThis post is in essence a summary of McNeish’s (2018) and Raykov and Marcoulides’s (2017) “exchange” on reliability measurement using Cronbach’s alpha. I want to add a few additional perspectives to this topic and provide a short How-To in R.
 What is reliabilityMany students might learn what reliability is, but once they reach research praxis they often have forgotten the details and what remains is the \(\alpha &amp;gt; .</description>
     </item>
     
     <item>
       <title>Withing and Between-Subjects Errors</title>
-      <link>/post/errors/withing-and-between-subjects-errors/</link>
+      <link>https://johanneskarl.netlify.com/post/errors/withing-and-between-subjects-errors/</link>
       <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/errors/withing-and-between-subjects-errors/</guid>
+      <guid>https://johanneskarl.netlify.com/post/errors/withing-and-between-subjects-errors/</guid>
       <description>This is a very short post in which I want to highlight, because I realized that the issue is often overlooked by students when writing up their data. Today I want to highlight the difference between within- and between-subjects errors (With code examples).
 Imagine you have data like this example below. Participants responded to a number of mindfulness items multiple times during the day over the duration of a week.</description>
     </item>
     
     <item>
       <title>Multi-dimensional scaling in R</title>
-      <link>/post/mds/smacof/</link>
+      <link>https://johanneskarl.netlify.com/post/mds/smacof/</link>
       <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/mds/smacof/</guid>
+      <guid>https://johanneskarl.netlify.com/post/mds/smacof/</guid>
       <description>MDS basicsThis post focuses on MDS (Also sometimes called smallest space analysis (Guttman, 1968) or multidimensional similarity structure analysis (Borg &amp;amp; Lingoes, 1987)) as exploratory tool and a large amount of the information is lifted from Borg and Gronen (2005) which I really recommend for further readings.
 Exploratory MDS might seem at first glance like tea-leaf reading, but over the years several rules have been developed that aid in determining structure from the MDS plots.</description>
     </item>
