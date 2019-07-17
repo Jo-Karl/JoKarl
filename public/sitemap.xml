@@ -1,10 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
     
     <url>
     
-      <loc>https://johanneskarl.netlify.com/post/tool-developement/</loc>
+      <loc>/</loc>
+      <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/</loc>
+      <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/java/</loc>
+      <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/surveys/</loc>
+      <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/</loc>
+      <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/tool-developement/</loc>
       <lastmod>2019-04-29T00:00:00+00:00</lastmod>
     </url>
     
@@ -12,7 +56,25 @@
     
     <url>
     
-      <loc>https://johanneskarl.netlify.com/post/introduction-to-response-surface-analysis/</loc>
+      <loc>/categories/tools/</loc>
+      <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/tools/</loc>
+      <lastmod>2019-04-29T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/introduction-to-response-surface-analysis/</loc>
       <lastmod>2019-03-23T00:00:00+00:00</lastmod>
     </url>
     
@@ -20,7 +82,61 @@
     
     <url>
     
-      <loc>https://johanneskarl.netlify.com/publication/studentopenscience/</loc>
+      <loc>/categories/r/</loc>
+      <lastmod>2019-03-23T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/r/</loc>
+      <lastmod>2019-03-23T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/rsa/</loc>
+      <lastmod>2019-03-23T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/stats/</loc>
+      <lastmod>2019-03-23T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/plotting/</loc>
+      <lastmod>2019-03-23T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication_types/2/</loc>
+      <lastmod>2018-11-23T13:06:41+13:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication/studentopenscience/</loc>
       <lastmod>2018-11-23T13:06:41+13:00</lastmod>
     </url>
     
@@ -28,7 +144,16 @@
     
     <url>
     
-      <loc>https://johanneskarl.netlify.com/publication/anxiety/</loc>
+      <loc>/publication_types/</loc>
+      <lastmod>2018-11-23T13:06:41+13:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication/anxiety/</loc>
       <lastmod>2018-11-23T13:06:41+13:00</lastmod>
     </url>
     
@@ -36,7 +161,7 @@
     
     <url>
     
-      <loc>https://johanneskarl.netlify.com/post/r-intro/introduction-to-r/</loc>
+      <loc>/post/r-intro/introduction-to-r/</loc>
       <lastmod>2018-11-23T00:00:00+00:00</lastmod>
     </url>
     
@@ -44,7 +169,7 @@
     
     <url>
     
-      <loc>https://johanneskarl.netlify.com/post/reliability/omega/</loc>
+      <loc>/post/reliability/omega/</loc>
       <lastmod>2018-10-07T00:00:00+00:00</lastmod>
     </url>
     
@@ -52,7 +177,7 @@
     
     <url>
     
-      <loc>https://johanneskarl.netlify.com/post/errors/withing-and-between-subjects-errors/</loc>
+      <loc>/post/errors/withing-and-between-subjects-errors/</loc>
       <lastmod>2018-10-07T00:00:00+00:00</lastmod>
     </url>
     
@@ -60,240 +185,7 @@
     
     <url>
     
-      <loc>https://johanneskarl.netlify.com/post/mds/smacof/</loc>
-      <lastmod>2018-07-20T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/talk/blue_welbeing/</loc>
-      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/talk/person_culture_fit/</loc>
-      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/post/</loc>
-      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/publication/</loc>
-      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/talk/</loc>
-      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/talk/rituals_anxiety/</loc>
-      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/</loc>
-      <lastmod>2017-10-15T00:00:00+13:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/publication_types/2/</loc>
-      <lastmod>2018-11-23T13:06:41+13:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/tags/green-vs.-blue/</loc>
-      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/tags/java/</loc>
-      <lastmod>2019-04-29T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/tags/mds/</loc>
-      <lastmod>2018-07-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/categories/mds/</loc>
-      <lastmod>2018-07-20T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/tags/personality/</loc>
-      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/publication_types/</loc>
-      <lastmod>2018-11-23T13:06:41+13:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/tags/r/</loc>
-      <lastmod>2019-03-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/categories/r/</loc>
-      <lastmod>2019-03-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/tags/rsa/</loc>
-      <lastmod>2019-03-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/tags/rituals/</loc>
-      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/categories/stats/</loc>
-      <lastmod>2019-03-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/tags/surveys/</loc>
-      <lastmod>2019-04-29T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/tags/</loc>
-      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/publication/values/</loc>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/tags/tools/</loc>
-      <lastmod>2019-04-29T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/categories/tools/</loc>
-      <lastmod>2019-04-29T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/tags/well-being/</loc>
-      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>https://johanneskarl.netlify.com/tags/ggplot2/</loc>
+      <loc>/tags/ggplot2/</loc>
       <lastmod>2018-10-07T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -302,9 +194,117 @@
     
     <url>
     
-      <loc>https://johanneskarl.netlify.com/tags/plotting/</loc>
-      <lastmod>2019-03-23T00:00:00+00:00</lastmod>
+      <loc>/categories/mds/</loc>
+      <lastmod>2018-07-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/mds/</loc>
+      <lastmod>2018-07-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/mds/smacof/</loc>
+      <lastmod>2018-07-20T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/green-vs.-blue/</loc>
+      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/talk/blue_welbeing/</loc>
+      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/talk/person_culture_fit/</loc>
+      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/personality/</loc>
+      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/</loc>
+      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication/</loc>
+      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/talk/</loc>
+      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/rituals/</loc>
+      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/talk/rituals_anxiety/</loc>
+      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/well-being/</loc>
+      <lastmod>2017-01-01T00:00:00+13:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/publication/values/</loc>
     </url>
     
   

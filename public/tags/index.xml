@@ -2,121 +2,121 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on </title>
-    <link>https://johanneskarl.netlify.com/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +1300</lastBuildDate>
+    <lastBuildDate>Mon, 29 Apr 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://johanneskarl.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Green vs. Blue</title>
-      <link>https://johanneskarl.netlify.com/tags/green-vs.-blue/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
-      
-      <guid>https://johanneskarl.netlify.com/tags/green-vs.-blue/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Java</title>
-      <link>https://johanneskarl.netlify.com/tags/java/</link>
+      <link>/tags/java/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/tags/java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>MDS</title>
-      <link>https://johanneskarl.netlify.com/tags/mds/</link>
-      <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://johanneskarl.netlify.com/tags/mds/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Personality</title>
-      <link>https://johanneskarl.netlify.com/tags/personality/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
-      
-      <guid>https://johanneskarl.netlify.com/tags/personality/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>https://johanneskarl.netlify.com/tags/r/</link>
-      <pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://johanneskarl.netlify.com/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>RSA</title>
-      <link>https://johanneskarl.netlify.com/tags/rsa/</link>
-      <pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://johanneskarl.netlify.com/tags/rsa/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rituals</title>
-      <link>https://johanneskarl.netlify.com/tags/rituals/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
-      
-      <guid>https://johanneskarl.netlify.com/tags/rituals/</guid>
+      <guid>/tags/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Surveys</title>
-      <link>https://johanneskarl.netlify.com/tags/surveys/</link>
+      <link>/tags/surveys/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/tags/surveys/</guid>
+      <guid>/tags/surveys/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tools</title>
-      <link>https://johanneskarl.netlify.com/tags/tools/</link>
+      <link>/tags/tools/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/tags/tools/</guid>
+      <guid>/tags/tools/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Well-being</title>
-      <link>https://johanneskarl.netlify.com/tags/well-being/</link>
-      <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
+      <title>R</title>
+      <link>/tags/r/</link>
+      <pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/tags/well-being/</guid>
+      <guid>/tags/r/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>ggplot2</title>
-      <link>https://johanneskarl.netlify.com/tags/ggplot2/</link>
-      <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
+      <title>RSA</title>
+      <link>/tags/rsa/</link>
+      <pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/tags/ggplot2/</guid>
+      <guid>/tags/rsa/</guid>
       <description></description>
     </item>
     
     <item>
       <title>plotting</title>
-      <link>https://johanneskarl.netlify.com/tags/plotting/</link>
+      <link>/tags/plotting/</link>
       <pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/tags/plotting/</guid>
+      <guid>/tags/plotting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ggplot2</title>
+      <link>/tags/ggplot2/</link>
+      <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/ggplot2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MDS</title>
+      <link>/tags/mds/</link>
+      <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Green vs. Blue</title>
+      <link>/tags/green-vs.-blue/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
+      
+      <guid>/tags/green-vs.-blue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Personality</title>
+      <link>/tags/personality/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
+      
+      <guid>/tags/personality/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rituals</title>
+      <link>/tags/rituals/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
+      
+      <guid>/tags/rituals/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Well-being</title>
+      <link>/tags/well-being/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
+      
+      <guid>/tags/well-being/</guid>
       <description></description>
     </item>
     

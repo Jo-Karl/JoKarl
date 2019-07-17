@@ -22,7 +22,8 @@ categories:
 ---
 ```{r Setup, include = F}
 library(tidyverse)
-mnd_test  <- read_csv("D:/Dropbox/Studies/Analysis Stage/Mindfulness Survey/Data/MND_FULL") 
+setwd("E:/Dropbox/Websites/JoKarl/")
+mnd_test  <- read_csv("static/files/MND_FULL") 
 facets <- c(
           "frbrg", "ms", "kms_bs", "kms_dscr","kms_wrnss",
           "kms_jdgmnt", "cms", "smq", "ffmq_bs", "ffmq_dscr",

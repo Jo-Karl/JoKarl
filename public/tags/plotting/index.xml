@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>plotting on </title>
-    <link>https://johanneskarl.netlify.com/tags/plotting/</link>
+    <link>/tags/plotting/</link>
     <description>Recent content in plotting on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Sat, 23 Mar 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://johanneskarl.netlify.com/tags/plotting/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/plotting/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Introduction to Response Surface Analysis </title>
-      <link>https://johanneskarl.netlify.com/post/introduction-to-response-surface-analysis/</link>
+      <link>/post/introduction-to-response-surface-analysis/</link>
       <pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/post/introduction-to-response-surface-analysis/</guid>
+      <guid>/post/introduction-to-response-surface-analysis/</guid>
       <description>The TheoryResponse Suface Analysis (RSA) is a method from the wider field of Response Surface Methodologies (RSM).
 RequirementsCommensurable Scales
 Commensurability explained as briefly as possible is that two scales are measured in the same units. In the world of Likert-scales this mostly means they are measured on the same number of points.
@@ -27,10 +27,10 @@ There is a number of ways this can be done.</description>
     
     <item>
       <title>Withing and Between-Subjects Errors</title>
-      <link>https://johanneskarl.netlify.com/post/errors/withing-and-between-subjects-errors/</link>
+      <link>/post/errors/withing-and-between-subjects-errors/</link>
       <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/post/errors/withing-and-between-subjects-errors/</guid>
+      <guid>/post/errors/withing-and-between-subjects-errors/</guid>
       <description>This is a very short post in which I want to highlight, because I realized that the issue is often overlooked by students when writing up their data. Today I want to highlight the difference between within- and between-subjects errors (With code examples).
 Imagine you have data like this example below. Participants responded to a number of mindfulness items multiple times during the day over the duration of a week.</description>
     </item>

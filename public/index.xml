@@ -1,30 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title></title>
-    <link>https://johanneskarl.netlify.com/</link>
+    <link>/</link>
     <description>Recent content on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +1300</lastBuildDate>
+    <lastBuildDate>Mon, 29 Apr 2019 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Tool Developement</title>
-      <link>https://johanneskarl.netlify.com/post/tool-developement/</link>
+      <link>/post/tool-developement/</link>
       <pubDate>Mon, 29 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/post/tool-developement/</guid>
+      <guid>/post/tool-developement/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Introduction to Response Surface Analysis </title>
-      <link>https://johanneskarl.netlify.com/post/introduction-to-response-surface-analysis/</link>
+      <link>/post/introduction-to-response-surface-analysis/</link>
       <pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/post/introduction-to-response-surface-analysis/</guid>
+      <guid>/post/introduction-to-response-surface-analysis/</guid>
       <description>
 
 
@@ -43,9 +42,12 @@
 &lt;p&gt;This is more of a scale design than a analysis issue. Here it is important to consider if negatively worded items should need to be included in the scale or if the lowest level of a positively worded item is the lowest score a participant could indicate.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;No Multicolliniearity&lt;/p&gt;
 &lt;p&gt;In contrast to the previous requirement this one is actually testable. The easiest way of doing this would be to run a regression with all predictors and examine the Variance Inflation Factors (VIF). An example can be seen below where I predict attractiveness of a landscape from ratings of valence and arousal. valence and arousal are centered around the scale mid-point of 5. VIF values below &lt;strong&gt;5&lt;/strong&gt; are generally considered acceptabily low to conclude that there is no mulitcolliniearity.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;car::vif(lm(attr ~ val_cent + aro_cent, data = data_long))&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## val_cent aro_cent 
-## 1.016503 1.016503&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;car::vif(lm(attr ~ val_cent * aro_cent + val_cent2 + aro_cent2, data = data_long))&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##          val_cent          aro_cent         val_cent2         aro_cent2 
+##          4.027766          5.436807          4.003578          1.931477 
+## val_cent:aro_cent 
+##          4.594957&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;In our current example we might have a slight multicolliniearity issue, but we are going to accept it for the purpose of the example.&lt;/p&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;High Power&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
@@ -53,13 +55,13 @@
 &lt;h1&gt;RSA How-To&lt;/h1&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(&amp;quot;RSA&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Loading required package: lavaan&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## This is lavaan 0.6-1&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## This is lavaan 0.6-3&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## lavaan is BETA software! Please report any bugs.&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Loading required package: lattice&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;rsa_sqd &amp;lt;- RSA(t_attr ~ val_cent * aro_cent, data = data_long, model = &amp;quot;full&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## [1] &amp;quot;Computing polynomial model (full) ...&amp;quot;&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(rsa_sqd)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## RSA output (package version 0.9.12)
+&lt;pre&gt;&lt;code&gt;## RSA output (package version 0.9.13)
 ## ===========================================&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Warning in sqrt(b3 * b5): NaNs produced
 
@@ -139,45 +141,45 @@ plot(rsa_sqd, legend=F, param=F,
      project=c(&amp;quot;LOC&amp;quot;, &amp;quot;LOIC&amp;quot;,&amp;quot;PA1&amp;quot;), 
      xlab=&amp;quot;Valence&amp;quot;, ylab=&amp;quot;Arousal&amp;quot;, zlab=&amp;quot;Attractiveness&amp;quot;
      )&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://johanneskarl.netlify.com/post/2019-03-23-introduction-to-response-surface-analysis_files/figure-html/RSA-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2019-03-23-introduction-to-response-surface-analysis_files/figure-html/RSA-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;/div&gt;
 </description>
     </item>
     
     <item>
       <title>Developing the credibility of psychological science: Graduate student reflections on open science.</title>
-      <link>https://johanneskarl.netlify.com/publication/studentopenscience/</link>
+      <link>/publication/studentopenscience/</link>
       <pubDate>Fri, 23 Nov 2018 13:06:41 +1300</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/publication/studentopenscience/</guid>
+      <guid>/publication/studentopenscience/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rituals, Repetitiveness and Cognitive Load a Competitive Test of Ritual Benefits for Stress.</title>
-      <link>https://johanneskarl.netlify.com/publication/anxiety/</link>
+      <link>/publication/anxiety/</link>
       <pubDate>Fri, 23 Nov 2018 13:06:41 +1300</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/publication/anxiety/</guid>
+      <guid>/publication/anxiety/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Introduction to R</title>
-      <link>https://johanneskarl.netlify.com/post/r-intro/introduction-to-r/</link>
+      <link>/post/r-intro/introduction-to-r/</link>
       <pubDate>Fri, 23 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/post/r-intro/introduction-to-r/</guid>
+      <guid>/post/r-intro/introduction-to-r/</guid>
       <description>&lt;p&gt;This week I ran two Introduction to R workshops at the Victoria University of Wellington School of Psychology.  If you are interested in downloading the slides you can find them &lt;a href=&#34;https://www.dropbox.com/s/p4gmjqrchk8dm3x/Introduction%20to%20R.pptx?dl=0&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>What&#39;s the deal with omega</title>
-      <link>https://johanneskarl.netlify.com/post/reliability/omega/</link>
+      <link>/post/reliability/omega/</link>
       <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/post/reliability/omega/</guid>
+      <guid>/post/reliability/omega/</guid>
       <description>
 
 
@@ -208,7 +210,7 @@ plot(rsa_sqd, legend=F, param=F,
 &amp;quot;flourishing_2&amp;quot;, &amp;quot;flourishing_3&amp;quot;, &amp;quot;flourishing_4&amp;quot;,
 &amp;quot;flourishing_5&amp;quot;, &amp;quot;flourishing_6&amp;quot;, &amp;quot;flourishing_7&amp;quot;, &amp;quot;flourishing_8&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Let’s get the theoretical assumpitions out of the way first. Regarding assumption 1, we know that the scale is not uni-dimensional, because it is made up from two distinct scales. We can support this looking at the scree plot below (the paralell analysis would show one factor, but for the sake of argument let’s assume the scree is right.)&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://johanneskarl.netlify.com/post/Reliability/omega_files/figure-html/paralelle-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/Reliability/omega_files/figure-html/paralelle-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;So we can see we already violate one assumption of Cronbach’s &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;. You can see similar things in many publications that first report the reliability of facets (e.g. mindfulness) and then report the overall reliability.&lt;/p&gt;
 &lt;p&gt;Assumption 2 can be split into the requirement that the data is continous, which Likert-type scales are arguably not &lt;span class=&#34;citation&#34;&gt;(for disagreeing stances see: Norman &lt;a href=&#34;#ref-Norman2010&#34;&gt;2010&lt;/a&gt;; Carifio and Perla &lt;a href=&#34;#ref-Carifio2007&#34;&gt;2007&lt;/a&gt;)&lt;/span&gt;. For brevities sake I avoid this discussion for now, on the other hand we can assess normality of our data quite easily. As shown below none of our items is normally distributed.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;##            Test      Variable Statistic   p value Normality
@@ -232,7 +234,7 @@ plot(rsa_sqd, legend=F, param=F,
 &lt;h1&gt;Alternatives&lt;/h1&gt;
 &lt;p&gt;So what are the alternatives to alpha. First I do not think that we need to replace alpha for now Raykov and Marcoulides &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-Raykov2017&#34;&gt;2017&lt;/a&gt;)&lt;/span&gt; make some interesting points on its contiued usage. So instead of replacing it, we could try supplementing it. Alternatives suggested by McNeish &lt;span class=&#34;citation&#34;&gt;(&lt;a href=&#34;#ref-McNeish2018&#34;&gt;2018&lt;/a&gt;)&lt;/span&gt; are omega total, and GLB. So how would we compute those reliabilities. We have a number of options from different packages, such as the &lt;em&gt;psych&lt;/em&gt; package.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;psy_omega &amp;lt;- psych::omega(dat[wll], nfactors = 2, poly = F)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://johanneskarl.netlify.com/post/Reliability/omega_files/figure-html/omega-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/Reliability/omega_files/figure-html/omega-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;psy_omega&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## Omega 
 ## Call: psych::omega(m = dat[wll], nfactors = 2, poly = F)
@@ -354,10 +356,10 @@ plot(rsa_sqd, legend=F, param=F,
     
     <item>
       <title>Withing and Between-Subjects Errors</title>
-      <link>https://johanneskarl.netlify.com/post/errors/withing-and-between-subjects-errors/</link>
+      <link>/post/errors/withing-and-between-subjects-errors/</link>
       <pubDate>Sun, 07 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/post/errors/withing-and-between-subjects-errors/</guid>
+      <guid>/post/errors/withing-and-between-subjects-errors/</guid>
       <description>
 
 
@@ -392,7 +394,7 @@ within$day &amp;lt;- as.integer(within$day)&lt;/code&gt;&lt;/pre&gt;
   guides(colour = FALSE) + 
   labs(x = &amp;quot;Day&amp;quot;, y = &amp;quot;Short Mindfulness Scale&amp;quot;) +
   theme_classic()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://johanneskarl.netlify.com/post/Errors/2018-11-07-withing-and-between-subjects-errors_files/figure-html/plotting-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/Errors/2018-11-07-withing-and-between-subjects-errors_files/figure-html/plotting-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
 &lt;div id=&#34;ref-Cousineau2017&#34;&gt;
 &lt;p&gt;Cousineau, Denis. 2017. “Varieties of Confidence Intervals.” &lt;em&gt;Advances in Cognitive Psychology&lt;/em&gt; 13 (2). University of Finance; Management in Warsaw: 140–55. doi:&lt;a href=&#34;https://doi.org/10.5709/acp-0214-z&#34;&gt;10.5709/acp-0214-z&lt;/a&gt;.&lt;/p&gt;
@@ -409,19 +411,19 @@ within$day &amp;lt;- as.integer(within$day)&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Multi-dimensional scaling in R</title>
-      <link>https://johanneskarl.netlify.com/post/mds/smacof/</link>
+      <link>/post/mds/smacof/</link>
       <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/post/mds/smacof/</guid>
+      <guid>/post/mds/smacof/</guid>
       <description>
-&lt;script src=&#34;https://johanneskarl.netlify.com/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://johanneskarl.netlify.com/rmarkdown-libs/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://johanneskarl.netlify.com/rmarkdown-libs/typedarray/typedarray.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;https://johanneskarl.netlify.com/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://johanneskarl.netlify.com/rmarkdown-libs/crosstalk/css/crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://johanneskarl.netlify.com/rmarkdown-libs/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
-&lt;link href=&#34;https://johanneskarl.netlify.com/rmarkdown-libs/plotly-htmlwidgets-css/plotly-htmlwidgets.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;https://johanneskarl.netlify.com/rmarkdown-libs/plotly-main/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/plotly-binding/plotly.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/typedarray/typedarray.min.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;/rmarkdown-libs/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/crosstalk/css/crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;/rmarkdown-libs/plotly-htmlwidgets-css/plotly-htmlwidgets.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/plotly-main/plotly-latest.min.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;div id=&#34;mds-basics&#34; class=&#34;section level1&#34;&gt;
@@ -495,7 +497,7 @@ stress_plot %&amp;gt;%
   geom_point() +
   geom_line() +
   theme_classic()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://johanneskarl.netlify.com/post/MDS/MDS_files/figure-html/scree-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/MDS/MDS_files/figure-html/scree-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;This plot can be inspected to determine the appropriate number of dimensions. As you can see stress is monotonically decreasing with increasing dimensionality. At the start a step decline occurs and after a certain point stress decreases only marginally with increasing dimensionality. A commonly applied interpretation is to look for the &lt;em&gt;elbow&lt;/em&gt; of the scree plot, where decreases in stress become less pronounced. The rationale of this choice is that the elbow marks the point where MDS uses additional dimensions to essentially only scale the noise in the data, after having succeeded in representing the systematic structure in the given dimensionality m.&lt;/p&gt;
 &lt;p&gt;I find it also quite useful to look at the distance in stress between &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(n + 1\)&lt;/span&gt;. The plot below plots the difference in stress for each dimension in respect to the previous dimension (It is obviously 0 for the first dimension, therefore the plot starts with &lt;span class=&#34;math inline&#34;&gt;\(n = 2\)&lt;/span&gt;). We can see that the difference between &lt;span class=&#34;math inline&#34;&gt;\(n = 1\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(n = 2\)&lt;/span&gt; is similar in real and simulated data. The pattern remains the same in real and simulated data until &lt;span class=&#34;math inline&#34;&gt;\(n= 5\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(n = 6\)&lt;/span&gt;. At this point we see a clear deviation in the real data from the pattern in the random data. This could indicate that this could be considered the point of inflection.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;stress_plot %&amp;gt;%
@@ -505,7 +507,7 @@ stress_plot %&amp;gt;%
   geom_step() +
   xlim(2, max(stress_plot$dimension)) +
   theme_classic()&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;https://johanneskarl.netlify.com/post/MDS/MDS_files/figure-html/alternative-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt; I mentioned parallel analysis above. Some simulation studies on stress obtained from random data based on different &lt;em&gt;n&lt;/em&gt; and &lt;em&gt;m&lt;/em&gt; were conducted in the past (Cliff, 1973; Knoll, 1969; Klahr, 1969; Spence and Ogilvie, 1973). It might be promising to implent an approach that mirrors parallel analysis for stress values.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/MDS/MDS_files/figure-html/alternative-1.png&#34; width=&#34;672&#34; style=&#34;display: block; margin: auto;&#34; /&gt; I mentioned parallel analysis above. Some simulation studies on stress obtained from random data based on different &lt;em&gt;n&lt;/em&gt; and &lt;em&gt;m&lt;/em&gt; were conducted in the past (Cliff, 1973; Knoll, 1969; Klahr, 1969; Spence and Ogilvie, 1973). It might be promising to implent an approach that mirrors parallel analysis for stress values.&lt;/p&gt;
 &lt;p&gt;In our current example this point could be point 4 based on the stress plot or 5/6 based on looking at drop in stress. A further problem that needs to be considered in MDS that if one intends to plot the resulting graph dimensions above 3 are hard to display and visually interpret. This makes trade offs between the goal of MDS, uncovering and visualising data structures, and statistical rigor necessary. I would use 3 dimensions, as they can still be visualised and their &lt;span class=&#34;math inline&#34;&gt;\(\sigma_1\)&lt;/span&gt; = 0.11 is low enough to assume acceptable representation of the underlying data.&lt;/p&gt;
 &lt;p&gt;So what is a acceptable stress value? Often quoted or rather misquoted at this point is Guttman (in Porrat, 1974). If you have a look online and even in some publications authors report that &lt;span class=&#34;math inline&#34;&gt;\(\sigma_1 &amp;lt;= .15\)&lt;/span&gt; represents a good value for an acceptably precise ordinal MDS solution. Citing again from Borg and Gronen:&lt;/p&gt;
 &lt;blockquote&gt;
@@ -546,37 +548,37 @@ p&lt;/code&gt;&lt;/pre&gt;
     
     <item>
       <title>Landscape and Well-Being: Using Psychology to Inform Urban Planning</title>
-      <link>https://johanneskarl.netlify.com/talk/blue_welbeing/</link>
+      <link>/talk/blue_welbeing/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/talk/blue_welbeing/</guid>
+      <guid>/talk/blue_welbeing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Person-culture fit and well-being</title>
-      <link>https://johanneskarl.netlify.com/talk/person_culture_fit/</link>
+      <link>/talk/person_culture_fit/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/talk/person_culture_fit/</guid>
+      <guid>/talk/person_culture_fit/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Rituals, Repetitiveness and Cognitive Load: A Competitive Test of Ritual Benefits for Stress</title>
-      <link>https://johanneskarl.netlify.com/talk/rituals_anxiety/</link>
+      <link>/talk/rituals_anxiety/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/talk/rituals_anxiety/</guid>
+      <guid>/talk/rituals_anxiety/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The Complexities of “Minding the Gap”: Perceived Discrepancies Between Values and Behavior Affect Well-Being</title>
-      <link>https://johanneskarl.netlify.com/publication/values/</link>
+      <link>/publication/values/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/publication/values/</guid>
+      <guid>/publication/values/</guid>
       <description></description>
     </item>
     

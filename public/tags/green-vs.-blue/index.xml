@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Green vs. Blue on </title>
-    <link>https://johanneskarl.netlify.com/tags/green-vs.-blue/</link>
+    <link>/tags/green-vs.-blue/</link>
     <description>Recent content in Green vs. Blue on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +1300</lastBuildDate>
     
-	<atom:link href="https://johanneskarl.netlify.com/tags/green-vs.-blue/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/green-vs.-blue/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Landscape and Well-Being: Using Psychology to Inform Urban Planning</title>
-      <link>https://johanneskarl.netlify.com/talk/blue_welbeing/</link>
+      <link>/talk/blue_welbeing/</link>
       <pubDate>Sun, 01 Jan 2017 00:00:00 +1300</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/talk/blue_welbeing/</guid>
+      <guid>/talk/blue_welbeing/</guid>
       <description></description>
     </item>
     

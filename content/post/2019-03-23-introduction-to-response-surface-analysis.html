@@ -32,9 +32,12 @@ image:
 <p>This is more of a scale design than a analysis issue. Here it is important to consider if negatively worded items should need to be included in the scale or if the lowest level of a positively worded item is the lowest score a participant could indicate.</p></li>
 <li><p>No Multicolliniearity</p>
 <p>In contrast to the previous requirement this one is actually testable. The easiest way of doing this would be to run a regression with all predictors and examine the Variance Inflation Factors (VIF). An example can be seen below where I predict attractiveness of a landscape from ratings of valence and arousal. valence and arousal are centered around the scale mid-point of 5. VIF values below <strong>5</strong> are generally considered acceptabily low to conclude that there is no mulitcolliniearity.</p>
-<pre class="r"><code>car::vif(lm(attr ~ val_cent + aro_cent, data = data_long))</code></pre>
-<pre><code>## val_cent aro_cent 
-## 1.016503 1.016503</code></pre></li>
+<pre class="r"><code>car::vif(lm(attr ~ val_cent * aro_cent + val_cent2 + aro_cent2, data = data_long))</code></pre>
+<pre><code>##          val_cent          aro_cent         val_cent2         aro_cent2 
+##          4.027766          5.436807          4.003578          1.931477 
+## val_cent:aro_cent 
+##          4.594957</code></pre>
+<p>In our current example we might have a slight multicolliniearity issue, but we are going to accept it for the purpose of the example.</p></li>
 <li><p>High Power</p></li>
 </ol>
 </div>
@@ -42,13 +45,13 @@ image:
 <h1>RSA How-To</h1>
 <pre class="r"><code>library(&quot;RSA&quot;)</code></pre>
 <pre><code>## Loading required package: lavaan</code></pre>
-<pre><code>## This is lavaan 0.6-1</code></pre>
+<pre><code>## This is lavaan 0.6-3</code></pre>
 <pre><code>## lavaan is BETA software! Please report any bugs.</code></pre>
 <pre><code>## Loading required package: lattice</code></pre>
 <pre class="r"><code>rsa_sqd &lt;- RSA(t_attr ~ val_cent * aro_cent, data = data_long, model = &quot;full&quot;)</code></pre>
 <pre><code>## [1] &quot;Computing polynomial model (full) ...&quot;</code></pre>
 <pre class="r"><code>summary(rsa_sqd)</code></pre>
-<pre><code>## RSA output (package version 0.9.12)
+<pre><code>## RSA output (package version 0.9.13)
 ## ===========================================</code></pre>
 <pre><code>## Warning in sqrt(b3 * b5): NaNs produced
 
