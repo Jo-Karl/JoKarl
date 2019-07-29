@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Fri, 23 Nov 2018 13:06:41 +1300</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jul 2019 13:06:41 +1300</lastBuildDate>
     
 	<atom:link href="/publication_types/2/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A Primer to (Cross-Cultural) Multi-Group Invariance Testing Possibilities in R</title>
+      <link>/publication/r_equivalence/</link>
+      <pubDate>Sun, 28 Jul 2019 13:06:41 +1300</pubDate>
+      
+      <guid>/publication/r_equivalence/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Developing the credibility of psychological science: Graduate student reflections on open science.</title>
