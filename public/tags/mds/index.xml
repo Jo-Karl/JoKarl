@@ -18,7 +18,8 @@
       <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/mds/smacof/</guid>
-      <description>#MDS basicsThis post focuses on MDS (Also sometimes called smallest space analysis(Guttman, 1968) or multidimensional similarity structure analysis (Borg&amp;amp; Lingoes, 1987)) as exploratory tool and a large amount of the information is lifted from Borg and Gronen (2005) which I really recommend for further readings.
+      <description>#MDS basics
+This post focuses on MDS (Also sometimes called smallest space analysis(Guttman, 1968) or multidimensional similarity structure analysis (Borg&amp;amp; Lingoes, 1987)) as exploratory tool and a large amount of the information is lifted from Borg and Gronen (2005) which I really recommend for further readings.
 Exploratory MDS might seem at first glance like tea-leaf reading, but over the years several rules have been developed that aid in determining structure from the MDS plots.</description>
     </item>
     

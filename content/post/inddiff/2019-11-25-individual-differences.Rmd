@@ -22,6 +22,10 @@ dat <- read_csv(paste0(here::here(), "/static/files/dist_mat_ega_comcorr.csv"))
 dat_m <- as.matrix(dat)
 ```
 
+# EGA-Results 3D
+
+This is the 3-d visualization for the EGA results.
+
 ```{r plotting 3d solution, warning = F, message = F, fig.width = 10, fig.height = 12, fig.align = "center"} 
 
 MDS <- smacof::mds(dat_m, type = "ordinal", ndim = 3)

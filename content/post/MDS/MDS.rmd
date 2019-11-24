@@ -37,7 +37,9 @@ facets <- c(
           "bfi_sens","bfi_img","fffs", "bis", "bas_ri", "bas_gdp", "bas_rr",                "bas_imp"
           )
 ```
+
 #MDS basics
+
 This post focuses on MDS (Also sometimes called smallest space analysis
 (Guttman, 1968) or multidimensional similarity structure analysis (Borg
 & Lingoes, 1987)) as exploratory tool and a large amount of the information is lifted from Borg and Gronen (2005) which I really recommend for further readings. 
