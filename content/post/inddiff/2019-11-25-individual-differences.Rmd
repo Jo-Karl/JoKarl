@@ -1,7 +1,14 @@
 ---
 title: 'Individual Differences'
-author: Johannes Karl
-date: '2019-11-25'
+author: "Johannes Karl"
+date: '2019-11-20'
+reading_time: true
+math: true
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+  word_document: default
 slug: individual-differences
 categories:
   - R
@@ -17,8 +24,8 @@ image:
 ```{r setup, include=FALSE}
 library(tidyverse)
 library(plotly)
-knitr::opts_chunk$set(echo = TRUE)
-dat <- read_csv(paste0(here::here(), "/static/files/dist_mat_ega_comcorr.csv"))
+setwd(here::here())
+dat <- read_csv(paste0("static/files/dist_mat_ega_comcorr.csv"))
 dat_m <- as.matrix(dat)
 ```
 
