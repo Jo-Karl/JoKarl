@@ -12,8 +12,53 @@
     
     <url>
     
-      <loc>/post/individual-differences-3d/</loc>
+      <loc>/categories/</loc>
       <lastmod>2019-11-25T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/post/individual-differences/</loc>
+      <lastmod>2019-11-25T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/r/</loc>
+      <lastmod>2019-11-25T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/r/</loc>
+      <lastmod>2019-11-25T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/categories/stats/</loc>
+      <lastmod>2019-11-25T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    <url>
+    
+      <loc>/tags/</loc>
+      <lastmod>2019-11-25T00:00:00+00:00</lastmod>
+      <priority>0</priority>
     </url>
     
   
@@ -46,15 +91,6 @@
     
     <url>
     
-      <loc>/categories/</loc>
-      <lastmod>2019-03-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/post/introduction-to-response-surface-analysis/</loc>
       <lastmod>2019-03-23T00:00:00+00:00</lastmod>
     </url>
@@ -63,43 +99,7 @@
     
     <url>
     
-      <loc>/categories/r/</loc>
-      <lastmod>2019-03-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/r/</loc>
-      <lastmod>2019-03-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
       <loc>/tags/rsa/</loc>
-      <lastmod>2019-03-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/categories/stats/</loc>
-      <lastmod>2019-03-23T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    <url>
-    
-      <loc>/tags/</loc>
       <lastmod>2019-03-23T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
