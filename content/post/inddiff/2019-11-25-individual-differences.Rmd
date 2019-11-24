@@ -1,6 +1,6 @@
 ---
-title: "Individual Differences"
-author: "Johannes Karl"
+title: 'Individual Differences'
+author: Johannes Karl
 date: '2019-11-25'
 slug: individual-differences
 categories:
