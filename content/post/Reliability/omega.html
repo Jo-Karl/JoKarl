@@ -24,12 +24,26 @@ header:
 <h1>What is reliability</h1>
 <p>Many students might learn what reliability is, but once they reach research praxis they often have forgotten the details and what remains is the <span class="math inline">\(\alpha &gt; .70\)</span> rule. To address this issue first, this rule was not suggested by Cronbach. The cut-off was suggested by Nunnally <span class="citation">(<a href="#ref-Nunnally1994">1994</a>)</span>. Let’s see what the original source says:</p>
 <blockquote>
-<p>“A satisfactory level of reliability depends on how a measure is being used. In the early stages of predictive or construct validation research, time and energy can be saved using instruments that have only modest reliability, e.g., .70. If significant correlations are found, corrections for attenuation will estimate how much the correlations will increase when reliabilities of measures are increased. If these corrected values look promising, it will be worth the time and effort to increase the number of items and reduce much beyond .80 in basic research is often wasteful of time and money. Measurement error attenuates correlations very little at that level. Strenuous and unnecessary efforts at standardization in addition to increasing the number of items might be required to obtain a reliability of, say, .90. In contrast to the standards used to compare groups, a reliability of .80 may not be nearly high enough in making decisions about individuals. Group research is often concerned with the size of correlations and with mean differences among experimental treatments, for which a reliability of .80 is adequate. However, a great deal hinges on the exact test scores when decisions are made about individuals. If, for example, children with IQs below 70 are to be placed in special classes, it may make a great deal of difference whether a child has an IQ of 65 or 75 on a particular test. When selection standards are quite rigorous, decisions depend on very small score differences, and so it is difficult to accept any measurement error. We have noted that the standard error of measurement is almost one-third as large as the overall standard deviation of test scores even when the reliability is .90. If important decisions are made with respect to specific test scores, a reliability of .90 is the bare minimum, and a reliability of .95 should be considered the desirable standard. However, never switch to a less valid measure simply because it is more reliable.” (pp.264)</p>
+<p>“A satisfactory level of reliability depends on how a measure is being used. In the early
+stages of predictive or construct validation research, time and energy can be saved using instruments that have only modest reliability, e.g., .70. If significant correlations
+are found, corrections for attenuation will estimate how much the correlations will increase when reliabilities of measures are increased. If these corrected values look
+promising, it will be worth the time and effort to increase the number of items and reduce
+much beyond .80 in basic research is often wasteful of time and money. Measurement
+error attenuates correlations very little at that level. Strenuous and unnecessary efforts
+at standardization in addition to increasing the number of items might be required to
+obtain a reliability of, say, .90. In contrast to the standards used to compare groups, a reliability of .80 may not be nearly high enough in making decisions about individuals. Group research is often concerned with the size of correlations and with mean differences among experimental treatments, for which a reliability of .80 is adequate. However, a great deal hinges on the exact test scores when decisions are made about individuals. If, for example, children with IQs below 70 are to be placed in special classes, it may make a great deal of difference whether a child has an IQ of 65 or 75 on a particular test. When selection standards are quite rigorous, decisions depend on very small score differences, and so it is difficult to accept any measurement error. We have noted that the standard error of measurement is almost one-third as large as the overall standard deviation of test
+scores even when the reliability is .90. If important decisions are made with respect to
+specific test scores, a reliability of .90 is the bare minimum, and a reliability of .95
+should be considered the desirable standard. However, never switch to a less valid
+measure simply because it is more reliable.” (pp.264)</p>
 </blockquote>
 <p>To boil down what Nunnally said; reliability can never replace validity, the reliability your measure should achieve is dependent on the context of application. The commonly applied rule of .70 is fitting for some contexts. Specifically contexts where one wants to save time and effort. Lance, Butts, and Michels <span class="citation">(<a href="#ref-Lance2006">2006</a>)</span> make the important point that this is not a context that applies in most published papers. In most contexts we would want <span class="math inline">\(\alpha\)</span> to be over .80 and over .90 | .95 if we make judgments about individuals based on this test, such as personality questionnaires used for hiring.</p>
 <p>In the discussion on the applicability of <span class="math inline">\(\alpha\)</span> Nunnally makes statements such as:</p>
 <blockquote>
-<p>“Coefficient a usually provides a good estimate of reliability because sampling of content is usually the major source of measurement error for static constructs and also because it is sensitive to the”sampling&quot; of situational factors as well as item content.&quot; (p.252)</p>
+<p>“Coefficient a usually provides a good estimate of reliability
+because sampling of content is usually the major source of measurement error
+for static constructs and also because it is sensitive to the”sampling&quot; of situational
+factors as well as item content.&quot; (p.252)</p>
 </blockquote>
 <p>But what is the “usual” case which Nunnally assumes. We could assume that it is the case in which the underlying assumption of <span class="math inline">\(\alpha\)</span> are met. Let’s have a look at these assumptions to better appreciate Nunnally’s usual case. I am paraphrasing in this section from the excellent article by McNeish <span class="citation">(<a href="#ref-McNeish2018">2018</a>)</span> and I highly recommend reading it for a more detailed discussion.</p>
 <ol style="list-style-type: decimal">
@@ -38,7 +52,8 @@ header:
 <li>The scale adheres to tau equivalence.</li>
 <li>The errors of the items do not covary.</li>
 </ol>
-<p>Let’s step through a normal scale we could find in our data, such as well-being. Participants answered a scale on flourishing and a scale on satisfaction with life. Because we are interested in overall well-being, we decided to combine the individual items into a single score.</p>
+<p>Let’s step through a normal scale we could find in our data, such as well-being.
+Participants answered a scale on flourishing and a scale on satisfaction with life. Because we are interested in overall well-being, we decided to combine the individual items into a single score.</p>
 <pre class="r"><code>wll &lt;- c(&quot;swls_1&quot;, &quot;swls_2&quot;, &quot;swls_3&quot;, &quot;swls_4&quot;, &quot;swls_5&quot;, &quot;flourishing_1&quot;,
 &quot;flourishing_2&quot;, &quot;flourishing_3&quot;, &quot;flourishing_4&quot;,
 &quot;flourishing_5&quot;, &quot;flourishing_6&quot;, &quot;flourishing_7&quot;, &quot;flourishing_8&quot;)</code></pre>
@@ -160,27 +175,25 @@ header:
 ##   Ordinal Cronbach&#39;s alpha: [0.93, 0.94]
 ## 
 ## Note: the normal point estimate and confidence interval for omega are based on the procedure suggested by Dunn, Baguley &amp; Brunsden (2013) using the MBESS function ci.reliability, whereas the psych package point estimate was suggested in Revelle &amp; Zinbarg (2008). See the help (&#39;?scaleStructure&#39;) for more information.</code></pre>
-</div>
-<div id="references" class="section level1 unnumbered">
-<h1>References</h1>
+<p>#References</p>
 <div id="refs" class="references">
 <div id="ref-Carifio2007">
 <p>Carifio, James, and Rocco J Perla. 2007. “Ten Common Misunderstandings, Misconceptions, Persistent Myths and Urban Legends about Likert Scales and Likert Response Formats and their Antidotes.” <em>Journal of Social Sciences</em> 3 (3): 106–16. <a href="https://thescipub.com/PDF/jssp.2007.106.116.pdf" class="uri">https://thescipub.com/PDF/jssp.2007.106.116.pdf</a>.</p>
 </div>
 <div id="ref-Lance2006">
-<p>Lance, C. E., Marcus M. Butts, and Lawrence C. Michels. 2006. “The Sources of Four Commonly Reported Cutoff Criteria: What Did They Really Say?” <em>Organizational Research Methods</em> 9 (2). SAGE Publications: 202–20. doi:<a href="https://doi.org/10.1177/1094428105284919">10.1177/1094428105284919</a>.</p>
+<p>Lance, C. E., Marcus M. Butts, and Lawrence C. Michels. 2006. “The Sources of Four Commonly Reported Cutoff Criteria: What Did They Really Say?” <em>Organizational Research Methods</em> 9 (2). SAGE Publications: 202–20. <a href="https://doi.org/10.1177/1094428105284919" class="uri">https://doi.org/10.1177/1094428105284919</a>.</p>
 </div>
 <div id="ref-McNeish2018">
-<p>McNeish, Daniel. 2018. “Thanks coefficient alpha, we’ll take it from here.” <em>Psychological Methods</em> 23 (3): 412–33. doi:<a href="https://doi.org/10.1037/met0000144">10.1037/met0000144</a>.</p>
+<p>McNeish, Daniel. 2018. “Thanks coefficient alpha, we’ll take it from here.” <em>Psychological Methods</em> 23 (3): 412–33. <a href="https://doi.org/10.1037/met0000144" class="uri">https://doi.org/10.1037/met0000144</a>.</p>
 </div>
 <div id="ref-Norman2010">
-<p>Norman, Geoff. 2010. “Likert scales, levels of measurement and the ‘laws’ of statistics.” <em>Advances in Health Sciences Education</em> 15 (5): 625–32. doi:<a href="https://doi.org/10.1007/s10459-010-9222-y">10.1007/s10459-010-9222-y</a>.</p>
+<p>Norman, Geoff. 2010. “Likert scales, levels of measurement and the &quot;laws&quot; of statistics.” <em>Advances in Health Sciences Education</em> 15 (5): 625–32. <a href="https://doi.org/10.1007/s10459-010-9222-y" class="uri">https://doi.org/10.1007/s10459-010-9222-y</a>.</p>
 </div>
 <div id="ref-Nunnally1994">
 <p>Nunnally, J.C., and I.H. Bernstein. 1994. “The Assessment of Reliability.” In <em>Psychometric Theory</em>, 3rd ed., 248–92.</p>
 </div>
 <div id="ref-Raykov2017">
-<p>Raykov, Tenko, and George A. Marcoulides. 2017. “Thanks Coefficient Alpha, We Still Need You!” <em>Educational and Psychological Measurement</em>, August. SAGE PublicationsSage CA: Los Angeles, CA, 001316441772512. doi:<a href="https://doi.org/10.1177/0013164417725127">10.1177/0013164417725127</a>.</p>
+<p>Raykov, Tenko, and George A. Marcoulides. 2017. “Thanks Coefficient Alpha, We Still Need You!” <em>Educational and Psychological Measurement</em>, August. SAGE PublicationsSage CA: Los Angeles, CA, 001316441772512. <a href="https://doi.org/10.1177/0013164417725127" class="uri">https://doi.org/10.1177/0013164417725127</a>.</p>
 </div>
 </div>
 </div>
