@@ -1,0 +1,36 @@
+---
+title: Individual Differences 3d
+author: Johannes Karl
+date: '2019-11-25'
+slug: individual-differences-3d
+categories: []
+tags: []
+image:
+  caption: ''
+  focal_point: ''
+---
+
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(plotly)
+knitr::opts_chunk$set(echo = TRUE)
+dat <- read_csv(paste0(here::here(), "/static/files/dist_mat_ega_comcorr.csv"))
+dat_m <- as.matrix(dat)
+```
+
+```{r plotting 3d solution, warning = F, message = F, fig.width = 10, fig.height = 12, fig.align = "center"} 
+
+MDS <- smacof::mds(dat_m, type = "ordinal", ndim = 3)
+coordinates <- as.data.frame(MDS$conf) %>%
+  tibble::rownames_to_column()
+
+p <- plot_ly(coordinates,
+                     x = ~D1,
+                     y = ~D2,
+                     z = ~D3) %>%
+  add_markers(name = ~rowname,
+              opacity = .80)
+  
+p
+```
