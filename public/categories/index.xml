@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on </title>
-    <link>https://johanneskarl.netlify.com/categories/</link>
+    <link>/categories/</link>
     <description>Recent content in Categories on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018</copyright>
-    <lastBuildDate>Sat, 23 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 Nov 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://johanneskarl.netlify.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>R</title>
-      <link>https://johanneskarl.netlify.com/categories/r/</link>
-      <pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate>
+      <link>/categories/r/</link>
+      <pubDate>Mon, 25 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/categories/r/</guid>
+      <guid>/categories/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Stats</title>
-      <link>https://johanneskarl.netlify.com/categories/stats/</link>
-      <pubDate>Sat, 23 Mar 2019 00:00:00 +0000</pubDate>
+      <link>/categories/stats/</link>
+      <pubDate>Mon, 25 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/categories/stats/</guid>
+      <guid>/categories/stats/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MDS</title>
-      <link>https://johanneskarl.netlify.com/categories/mds/</link>
+      <link>/categories/mds/</link>
       <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://johanneskarl.netlify.com/categories/mds/</guid>
+      <guid>/categories/mds/</guid>
       <description></description>
     </item>
     
