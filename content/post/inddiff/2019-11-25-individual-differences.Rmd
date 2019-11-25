@@ -27,23 +27,51 @@ library(plotly)
 setwd(here::here())
 dat <- read_csv(paste0("static/files/dist_mat_ega_comcorr.csv"))
 dat_m <- as.matrix(dat)
+rownames(dat_m) <- colnames(dat_m)
 ```
 
+
+# EGA-Results 2D
+
+This is the 2-d visualization for the EGA results.
+
+```{r 2d}
+
+
+MDS <- smacof::mds(dat_m, type = "ordinal", ndim = 3)
+
+as.data.frame(MDS$conf) %>%
+  ggplot() +
+  aes(x = D1 , y = D2, label = rownames(MDS$conf)) +
+  geom_point() +
+  geom_text(nudge_y = .05)
+
+as.data.frame(MDS$conf) %>%
+  ggplot() +
+  aes(x = D2 , y = D3, label = rownames(MDS$conf)) +
+  geom_point() +
+  geom_text(nudge_y = .05)
+
+as.data.frame(MDS$conf) %>%
+  ggplot() +
+  aes(x = D1 , y = D3, label = rownames(MDS$conf)) +
+  geom_point() +
+  geom_text(nudge_y = .05)
+
+```
 # EGA-Results 3D
 
 This is the 3-d visualization for the EGA results.
 
 ```{r plotting 3d solution, warning = F, message = F, fig.width = 10, fig.height = 12, fig.align = "center"} 
 
-MDS <- smacof::mds(dat_m, type = "ordinal", ndim = 3)
-coordinates <- as.data.frame(MDS$conf) %>%
-  tibble::rownames_to_column()
+coordinates <- as.data.frame(MDS$conf) 
 
 p <- plot_ly(coordinates,
                      x = ~D1,
                      y = ~D2,
                      z = ~D3) %>%
-  add_markers(name = ~rowname,
+  add_markers(name = ~rownames(coordinates),
               opacity = .80)
   
 p
