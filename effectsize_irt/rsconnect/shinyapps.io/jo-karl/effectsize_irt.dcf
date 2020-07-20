@@ -1,0 +1,12 @@
+name: effectsize_irt
+title: effectsize_irt
+username:
+account: jo-karl
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1856954
+bundleId: 2826064
+url: https://jo-karl.shinyapps.io/effectsize_irt/
+when: 1582583869.86063
+asMultiple: FALSE
+asStatic: FALSE
