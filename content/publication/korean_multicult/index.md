@@ -1,5 +1,5 @@
 +++
-title = "Time investments in rituals are associated with social bonding, affect and subjective health: A longitudinal study of Diwali in two Indian communities"
+title = "How Normative Multiculturalism affects Immigrant Wellbeing"
 date = 2020-08-28T13:06:41+13:00
 draft = false
 
