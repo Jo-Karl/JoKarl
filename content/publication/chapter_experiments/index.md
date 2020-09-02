@@ -18,7 +18,7 @@ authors = ["Ronald Fischer", "Johannes A. Karl"]
 publication_types = ["6"]
 
 # Publication name and optional abbreviated version.
-publication = "Human Nature"
+publication = "The SAGE Handbook of Contemporary Cross-Cultural Management"
 publication_short = ""
 
 # Abstract and optional shortened version.
