@@ -1,6 +1,6 @@
 +++
 title = "Experimental Methods In Cross-Cultural Management"
-date = 2020-07-23T13:06:41+13:00
+date = 2020-05-23T13:06:41+13:00
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
