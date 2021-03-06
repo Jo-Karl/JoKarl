@@ -69,7 +69,7 @@ wll <- c("swls_1", "swls_2", "swls_3", "swls_4", "swls_5", "flourishing_1",
 ```
 
 
-Let's get the theoretical assumpitions out of the way first. Regarding assumption 1, we know that the scale is not uni-dimensional, because it is made up from two distinct scales. We can support this looking at the scree plot below (the paralell analysis would show one factor, but for the sake of argument let's assume the scree is right.)
+Let's get the theoretical assumptions out of the way first. Regarding assumption 1, we know that the scale is not uni-dimensional, because it is made up from two distinct scales. We can support this looking at the scree plot below (the parallel analysis would show one factor, but for the sake of argument let's assume the scree is right.)
 
 ```{r paralelle, echo = F, message = F}
 psych::scree(dat[wll])

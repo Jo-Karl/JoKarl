@@ -1,0 +1,140 @@
+---
+title: Introduction to randomness
+author: Johannes Karl
+date: '2020-10-07'
+slug: seed
+link-citations: true
+bibliography: [random.bib] 
+categories:
+  - R
+tags:
+  - R
+header:
+  caption: ''
+  image: ''
+---
+
+```{r data, include = F}
+library(tidyverse)
+```
+```{r, simulating data}
+full_n <- lapply(seq(200, 1000, 200), function(s_size){
+  full <- 
+lapply(seq(0,.50, .01), function(shift){
+  out <- 
+lapply(sample.int(9999, 1000), function(seed){
+ set.seed(seed)
+
+t_df <- t.test(rnorm(s_size), rnorm(s_size, shift))
+
+data.frame(seed = seed,
+           t = t_df$statistic,
+           p = t_df$p.value,
+           sig = if_else(t_df$p.value < .05, "y", "n"),
+           shift = shift,
+           s_size = s_size) 
+})
+
+overall <- do.call(rbind, out)
+})
+
+full_df <- do.call(rbind, full)
+})
+full_df_n <- do.call(rbind, full_n)
+
+to_plot <- 
+  full_df_n %>%
+  group_by(shift, s_size) %>%
+  summarise(ratio = (table(sig)[2]/n()) *100,
+            std_dev = sd(p),
+            mean_p = mean(p))
+
+plot_ci <- Rmisc::summarySE(full_df_n, measurevar = "p", groupvars = c("shift", "s_size"))
+to_plot %>%
+ggplot() +
+  aes(shift, mean_p) +
+  geom_point() +
+  geom_errorbar(aes(ymin = mean_p - std_dev, ymax = mean_p + std_dev)) +
+  geom_smooth(method = "lm") +
+  geom_hline(yintercept = .05, color = "red") +
+  facet_wrap(~ s_size)
+
+df_owl <- 
+data.frame(x1 = runif(200,1,5),
+x2 = runif(200,1,5),
+x3 = runif(200,1,5),
+b0 = 17,
+b1 = 0.5,
+b2 = 0.037,
+b3 = -5.2,
+sigma = 1.4
+) %>%
+  mutate(eps = rnorm(x1,0,sigma)) %>%
+  mutate(y = b0 + b1*x1  + b2*x2  + b3*x3 + abs(eps))
+
+
+size_outer <- 
+lapply(seq(0,.50, .05), function(size){
+lapply(c(200, 400, 600), function(sample_size){
+test <- lavaan::simulateData(paste0("y ~ ", size,  "* x1"), sample.nobs = sample_size, iseed = 2711)
+
+mdl <- 'y ~ x1'
+  
+
+lav_out <- 
+lapply(sample.int(9999, 100), function(seed_i){
+out_lv <- lavaan::sem(mdl, test, se = "bootstrap", iseed = seed_i)
+inner_out <- dplyr::filter(parameterestimates(out_lv), rhs == "x1", op == "~")$p
+
+data.frame(seed = seed_i,
+           p = inner_out,
+           size = size,
+           s_size = sample_size)
+}) 
+print(paste0(size))
+overall <- do.call(rbind, lav_out)
+})
+})
+
+
+  
+
+overall_outer <- do.call(rbind, size_outer) 
+
+overall_outer_sum <- 
+overall_outer %>%
+  group_by(size) %>%
+  summarise(std_dev = sd(p),
+            mean_p = mean(p))
+
+
+overall_outer_sum %>%
+ggplot() +
+  aes(size, std_dev) +
+  geom_point(color = "red") +
+  geom_smooth(method = "lm") +
+  geom_hline(yintercept = .05, color = "red")
+
+
+
+library(lavaan)
+
+
+
+
+
+
+
+
+owl <- 
+data.frame(x = rnorm(200)) %>%
+  mutate(y = .50 * x + .05)
+           
+
+ggsave(filename = "sim.png")
+ t = 2.0000
+ p =  0.0462
+ df = 398
+```
+
+#References
