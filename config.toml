@@ -52,7 +52,7 @@ enableGitInfo = false
 
   # Your details.
   name = "Johannes A. Karl"
-  role = "PhD Student in Psychology"
+  role = "Lecturer in Psychology"
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
@@ -63,7 +63,7 @@ enableGitInfo = false
 
   # Details for the Contact Widget
   email = "johannes.karl@vuw.ac.nz"
-  address = "EA510 School of Psychology Victoria University of Wellington"
+  address = "EA314 School of Psychology Victoria University of Wellington"
   
 
   # Discussion link (e.g. link to a forum, mailing list, or chat).
