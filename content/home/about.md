@@ -2,7 +2,7 @@
 # About/Biography widget.
 widget = "about"
 active = true
-date = 2016-04-20T00:00:00
+date = 2020-04-20T00:00:00
 
 # Order that this section will appear in.
 weight = 5
@@ -12,7 +12,8 @@ weight = 5
   interests = [
     "Mindfulness",
     "Rituals",
-    "Personality"
+    "Personality",
+    "Values"
   ]
 
 # List your qualifications (such as academic degrees).
@@ -30,4 +31,4 @@ weight = 5
 
 # Biography
 
-I am a PhD student at the Victoria University of Wellington. My current work broadly focuses on the origin and expression of individual differences in personality, values, and mindfulness. I have published on cross-cultural approaches to mindfulness, cross-temporal investigations of personality in literature using text mining, and network-perspectives on individual differences. Ongoing research projects include quantitative approaches to philosophy as way of live, the use of network statistics in cross-cultural psychology, and state-trait interactions of mindfulness.  
+I am a Lecturer at the Victoria University of Wellington. My current work broadly focuses on the origin and expression of individual differences in personality, values, and mindfulness. I have published on cross-cultural approaches to mindfulness, cross-temporal investigations of personality in literature using text mining, and network-perspectives on individual differences. Ongoing research projects include quantitative approaches to philosophy as way of live, the use of network statistics in cross-cultural psychology, and state-trait interactions of mindfulness.  
