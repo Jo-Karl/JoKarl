@@ -1,0 +1,64 @@
+---
+title: Publications
+author: Johannes A. Karl
+date: '2020-12-19'
+slug: pubs
+description: Article description.
+featured: no
+toc: no
+codeMaxLines: 10
+codeLineNumbers: no
+figurePositionShow: yes
+comment: false
+---
+
+```{r chunk, echo = F, results="asis"}
+library("xlsx")
+my_data <- read.xlsx(file = "publications.xlsx", sheetIndex = 1, 
+                     header = TRUE, stringsAsFactors = FALSE, encoding="UTF-8")
+
+my_data$Row <- row.names(my_data)
+my_data <- my_data[order(my_data$Year, as.numeric(my_data$Row), 
+                         decreasing = c(TRUE, TRUE)), ]
+years <- sort(unique(my_data$Year), decreasing = TRUE)
+cat("<script type='text/javascript' src='https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js'></script>")
+for(year in years){
+  cat(paste("\n","## ",year,sep=""))
+  thisyear <- my_data[my_data$Year == year,]
+  if(dim(thisyear)[1] > 0){
+    cat("\n<ul>")
+    for(i in 1:(dim(thisyear)[1])){
+      cat(paste("\n<li>",sep = ""))
+      cat(paste(thisyear$Author[i], " (",year,"). ",thisyear$Title[i], ". ", sep=""))
+      if(!is.na(thisyear$Journal[i])){
+        cat(paste("<i>",thisyear$Journal[i],"</i>. ",sep="")) 
+      }
+      if(!is.na(thisyear$Details[i])){ 
+        cat(paste(thisyear$Details[i],sep="")) 
+      }
+      
+      if(!is.na(thisyear$DOI[i])){
+        cat(" <a href=\"http://dx.doi.org/",thisyear$DOI[i],"\" 
+            target=\"_blank\">[DOI]</a>")
+      }
+      
+      if(!is.na(thisyear$OSF[i])){
+        cat(" <a href=\"https://osf.io/",thisyear$OSF[i],"\">[OSF]</a>", sep = "")
+      }
+
+      if(!is.na(thisyear$short[i])){
+        cat(" [[PDF]](/pdf/",thisyear$short[i],".pdf)", sep = "")
+      }
+      
+      if(!is.na(thisyear$DOI[i])){
+        cat("<div class='altmetric-embed' data-doi=",thisyear$DOI[i]," data-hide-no-mentions='true'></div>", sep = "")
+      }
+      
+    }
+    cat("\n</ul>")
+  }
+
+} 
+
+
+```

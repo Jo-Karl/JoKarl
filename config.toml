@@ -305,6 +305,12 @@ enableGitInfo = false
   name = "VUW Evolutionary Psychology"
   url = "https://mindcultureevolution.com/"
   weight = 3
+  
+[[menu.main]]
+  name = "Publications"
+  url = "post/pubs/"
+  weight = -107
+  
 #[[menu.main]]
 #  name = "Projects"
 #  url = "#projects"
