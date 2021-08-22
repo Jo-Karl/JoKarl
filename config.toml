@@ -273,10 +273,10 @@ enableGitInfo = false
 
   # Link to a PDF of your resume/CV from the About widget.
   # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.
-  # [[params.social]]
-  #   icon = "cv"
-  #   icon_pack = "ai"
-  #   link = "files/cv.pdf"
+   [[params.social]]
+     icon = "cv"
+     icon_pack = "ai"
+     link = "files/cv.pdf"
 
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
@@ -291,10 +291,10 @@ enableGitInfo = false
   url = "#about"
   weight = 1
 
-#[[menu.main]]
-#  name = "Publications"
-#  url = "#publications"
-#  weight = 2
+[[menu.main]]
+  name = "Publications"
+  url = "#publications"
+  weight = 2
 
 [[menu.main]]
   name = "Posts"
@@ -306,10 +306,10 @@ enableGitInfo = false
   url = "https://mindcultureevolution.com/"
   weight = 3
   
-[[menu.main]]
-  name = "Publications"
-  url = "post/pubs/publications"
-  weight = 2
+#[[menu.main]]
+#  name = "Publications"
+#  url = "post/pubs/publications"
+#  weight = 2
   
   
 #[[menu.main]]
