@@ -4,7 +4,7 @@ date = 2020-09-01T13:06:41+13:00
 draft = false
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Ronald Fischer", "Johannes A. Karl", "Markus Luczak–Roesch", "Markus Luczak–Roesch", "Adam Grener"]
+authors = ["Ronald Fischer", "Johannes A. Karl", "Markus Luczak–Roesch", "Velichko H. Fetvadjiev", "Adam Grener"]
 
 # Publication type.
 # Legend:
@@ -22,7 +22,7 @@ publication = "European Journal of Personality"
 publication_short = ""
 
 # Abstract and optional shortened version.
-abstract = "We present a new method for personality assessment at a distance to uncover personality structure in historical texts. We focus on how two 19th century authors understood and described human personality; we apply a new bottom–up computational approach to extract personality dimensions used by Jane Austen and Charles Dickens to describe fictional characters in 21 novels. We matched personality descriptions using three person–description dictionaries marker scales as reference points for interpretation. Factor structures did not show strong convergence with the contemporary Big Five model. Jane Austen described characters in terms of social and emotional richness with greater nuances but using a less extensive vocabulary. Charles Dickens, in contrast, used a rich and diverse personality vocabulary, but those descriptions centred around more restricted dimensions of power and dominance. Although we could identify conceptually similar factors across the two authors, analyses of the overlapping vocabulary between the two authors suggested only moderate convergence. We discuss the utility and potential of automated text analysis and the lexical hypothesis to (i) provide insights into implicit personality models in historical texts and (ii) bridge the divide between idiographic and nomothetic perspectives. © 2020 European Association of Personality Psychology"
+abstract = "We present a new method for personality assessment at a distance to uncover personality structure in historical texts. We focus on how two 19th century authors understood and described human personality; we apply a new bottom–up computational approach to extract personality dimensions used by Jane Austen and Charles Dickens to describe fictional characters in 21 novels. We matched personality descriptions using three person–description dictionaries marker scales as reference points for interpretation. Factor structures did not show strong convergence with the contemporary Big Five model. Jane Austen described characters in terms of social and emotional richness with greater nuances but using a less extensive vocabulary. Charles Dickens, in contrast, used a rich and diverse personality vocabulary, but those descriptions centred around more restricted dimensions of power and dominance. Although we could identify conceptually similar factors across the two authors, analyses of the overlapping vocabulary between the two authors suggested only moderate convergence. We discuss the utility and potential of automated text analysis and the lexical hypothesis to (i) provide insights into implicit personality models in historical texts and (ii) bridge the divide between idiographic and nomothetic perspectives."
 abstract_short = ""
 
 # Is this a selected publication? (true/false)
