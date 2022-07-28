@@ -18,7 +18,7 @@ weight = 5
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD Student in Psychology"
+  course = "PhD in Psychology"
   institution = "Victoria University of Wellington"
   year = 2021
 
@@ -31,4 +31,4 @@ weight = 5
 
 # Biography
 
-I am a Lecturer at the Victoria University of Wellington. My current work broadly focuses on the origin and expression of individual differences in personality, values, and mindfulness. I have published on cross-cultural approaches to mindfulness, cross-temporal investigations of personality in literature using text mining, and network-perspectives on individual differences. Ongoing research projects include quantitative approaches to philosophy as way of live, the use of network statistics in cross-cultural psychology, and state-trait interactions of mindfulness.  
+I am an Assistant Professor at the Dublin City University. My current work broadly focuses on the origin and expression of individual differences in personality, values, and mindfulness. I have published on cross-cultural approaches to mindfulness, cross-temporal investigations of personality in literature using text mining, and network-perspectives on individual differences. Ongoing research projects include quantitative approaches to philosophy as way of live, the use of network statistics in cross-cultural psychology, and state-trait interactions of mindfulness.  

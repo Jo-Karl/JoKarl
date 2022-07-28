@@ -52,18 +52,18 @@ enableGitInfo = false
 
   # Your details.
   name = "Johannes A. Karl"
-  role = "Lecturer in Psychology"
+  role = "Assistant Professor in Psychology"
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Victoria University of Wellington", url = "" } ]
+  organizations = [ { name = "Dublin City University", url = "" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
 
   # Details for the Contact Widget
-  email = "johannes.karl@vuw.ac.nz"
-  address = "EA314 School of Psychology Victoria University of Wellington"
+  email = "johannes.karl@dcu.ie"
+  address = "H254 School of Psychology Dublin City University"
   
 
   # Discussion link (e.g. link to a forum, mailing list, or chat).
@@ -249,7 +249,7 @@ enableGitInfo = false
     [[params.social]]
     icon = "envelope"
     icon_pack = "fas"
-    link = "mailto:johannes.karl@vuw.ac.nz"
+    link = "mailto:johannes.karl@dcu.ie"
 
   [[params.social]]
     icon = "twitter-square"
