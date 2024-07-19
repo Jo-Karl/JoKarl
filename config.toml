@@ -56,14 +56,14 @@ enableGitInfo = false
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Dublin City University", url = "" } ]
+  organizations = [ { name = "Stanford Graduate School of Business", url = "" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
 
   # Details for the Contact Widget
-  email = "johannes.karl@dcu.ie"
-  address = "H254 School of Psychology Dublin City University"
+  email = "johannes.a.karl@gmail.com"
+  address = "Stanford School of Business"
   
 
   # Discussion link (e.g. link to a forum, mailing list, or chat).
@@ -249,7 +249,7 @@ enableGitInfo = false
     [[params.social]]
     icon = "envelope"
     icon_pack = "fas"
-    link = "mailto:johannes.karl@dcu.ie"
+    link = "mailto:johannes.a.karl@gmail.com"
 
   [[params.social]]
     icon = "twitter-square"
@@ -301,10 +301,6 @@ enableGitInfo = false
   url = "#posts"
   weight = 3
   
-[[menu.main]]
-  name = "VUW Evolutionary Psychology"
-  url = "https://mindcultureevolution.com/"
-  weight = 3
   
 #[[menu.main]]
 #  name = "Publications"
